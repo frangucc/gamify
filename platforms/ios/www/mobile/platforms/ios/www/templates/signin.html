@@ -1,0 +1,33 @@
+<ion-view title="Sign In" hide-back-button="true">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left"class="button button-icon ion-navicon-round"></button>
+    </ion-nav-buttons>
+    <ion-content class="has-header">
+        <form name="loginForm">
+            <div class="list list-inset">
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Email address</span>
+                <input type="email" name="email" ng-model="userDetails.email" placeholder="Enter email here..." required>
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Password</span>
+                <input type="password" name="password" ng-model="userDetails.password" placeholder="Enter password here..." required>
+            </label>
+            </div>
+            <div class="padding">
+                <button class="button button-block button-balanced" ng-click="(loginForm.$valid) ? performLogin() : showInvalid()">Sign in</button>
+                <button class="button button-block button-balanced" ng-click="performLoginGit()">Sign in with GitHub</button>
+            </div>
+
+        </form>
+
+
+
+        <hr />
+        <div class="padding">
+            <a class="button button-block button-positive" href="#/app/signup" >Sign up</a>
+            <a class="button button-block" href="#/app/playlists" >Go back to playlists</a>
+        </div>
+
+    </ion-content>
+</ion-view>

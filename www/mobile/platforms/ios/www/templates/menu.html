@@ -1,0 +1,45 @@
+<ion-side-menus>
+
+    <ion-pane ion-side-menu-content>
+        <ion-nav-bar class="bar-positive nav-title-slide-ios7">
+            <ion-nav-back-button class="button-clear"><i class="icon ion-chevron-left"></i> Back</ion-nav-back-button>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+    </ion-pane>
+
+    <ion-side-menu side="left" style="background-color:#484e54;">
+        
+        <ion-content>
+            <ion-list>
+                <ion-item nav-clear menu-close href="#/app/search" style="background-color:#2b2f33;">
+                    <i class="icon ion-monitor" ></i><span>How it Works</span>
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/about">
+                    <i class="icon ion-arrow-right-b"></i>Tour
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/team">
+                    <i class="icon ion-person-stalker"></i>Our Team
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/tasker">
+                    <i class="icon ion-clipboard"></i>Taksers
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/jobs">
+                    <i class="icon ion-android-star" style="color:yellow;"></i>We're Hiring!
+                </ion-item>
+                
+                <ion-item nav-clear menu-close href="#/app/signin" ng-hide="loginObj.user !== null">
+                    <i class="icon ion-clipboard"></i>Login
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/signup" ng-hide="loginObj.user !== null">
+                    <i class="icon ion-compose"></i>Sign up
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/account" ng-hide="loginObj.user === null">
+                    Account Details
+                </ion-item>
+                <ion-item nav-clear menu-close ng-click="loginObj.$logout()" ng-hide="loginObj.user === null">
+                    Logout
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

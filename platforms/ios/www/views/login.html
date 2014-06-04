@@ -1,0 +1,13 @@
+<script>window.scrollTo(500,0);</script>
+<div class="auth-forms" style="text-align:center;">
+ 	<h1 style="color:#000;font-size:70px;letter-spacing:-3px;margin-top:30px;">We will send you an invite soon.</h1>
+  <h2>Log In</h2>
+ 
+  <form ng-submit="login()" style="margin-left:30%;">
+    <p ng-show="error" class="text-danger">{{ error }}</p>
+    <input type="email" ng-model="user.email" placeholder="Email" class="form-control input-style"><br><br><br><br>
+    <input type="password" ng-model="user.password" placeholder="Password" class="form-control input-style"><br><br><br><br>
+    <input type="submit" value="Log in" class="btn btn-primary btn-default" />
+  </form>
+ 
+</div>

@@ -1,0 +1,31 @@
+<ion-view title="Messages" hide-back-button="true">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <ion-refresher on-refresh="doRefresh()">
+    </ion-refresher>
+    <div class="card" ng-hide="messages.$getIndex().length">
+        <div class="item item-text-wrap messageAlert">
+            <div><span class="icon ion-ios7-information-outline"></span> No messages found!</div>
+        </div>
+    </div>
+    <div class="card" ng-repeat="(id, message) in messages">
+        <div class="item item-text-wrap">
+            {{message.sender}} says: {{message.message}}
+        </div>
+        <div class="item item-divider" ng-hide="loginObj.user.email !== message.sender">
+            <button class="button button-block button-positive" ng-click="removeMessage(id)">
+                Delete Message
+            </button>
+        </div>
+    </div>
+  </ion-content>
+  <ion-footer-bar class="bar-dark">
+      <label class="item-input-wrapper item-input-inset">
+        <i class="icon ion-ios7-search placeholder-icon"></i>
+        <input type="search" placeholder="Enter your message..." ng-model="newMessage.message" ng-keyup="($event.keyCode == 13 && newMessage.message.length > 2) ? sendMessage() : return">
+      </label>
+      <button class="button button-clear" ng-click="sendMessage()">Send</button>
+  </ion-footer-bar>
+</ion-view>

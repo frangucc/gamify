@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - '0.10'
+before_install:
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'generator-fjp-cordova-final' ]; then cd .. && eval "mv $currentfolder generator-fjp-cordova-final" && cd generator-fjp-cordova-final; fi
+

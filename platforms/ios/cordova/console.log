@@ -1,0 +1,148 @@
+2014-02-26 13:10:02.507 fjp-cordova-final[66569:a0b] Multi-tasking -> Device: YES, App: YES
+2014-02-26 13:10:02.555 fjp-cordova-final[66569:a0b] Unlimited access to network resources
+2014-02-26 13:10:03.012 fjp-cordova-final[66569:a0b] [CDVTimer][splashscreen] 105.650008ms
+2014-02-26 13:10:03.017 fjp-cordova-final[66569:a0b] [CDVTimer][statusbar] 3.829002ms
+2014-02-26 13:10:03.017 fjp-cordova-final[66569:a0b] [CDVTimer][TotalPluginStartup] 111.097038ms
+2014-02-26 13:10:03.275 fjp-cordova-final[66569:a0b] Resetting plugins due to page load.
+2014-02-26 13:10:04.634 fjp-cordova-final[66569:a0b] Finished load of: file:///Users/frangucc/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/761233B2-2289-492E-A335-AD92736522E7/fjp-cordova-final.app/www/index.html#/home
+Terminating in response to SpringBoard's termination.
+2014-05-19 11:41:56.950 fjp-cordova-final[2369:a0b] Multi-tasking -> Device: YES, App: YES
+2014-05-19 11:41:56.977 fjp-cordova-final[2369:a0b] Unlimited access to network resources
+2014-05-19 11:41:57.205 fjp-cordova-final[2369:a0b] [CDVTimer][statusbar] 54.020047ms
+2014-05-19 11:41:57.223 fjp-cordova-final[2369:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-19 11:41:57.224 fjp-cordova-final[2369:a0b] [CDVTimer][splashscreen] 18.454015ms
+2014-05-19 11:41:57.224 fjp-cordova-final[2369:a0b] [CDVTimer][TotalPluginStartup] 73.229015ms
+2014-05-19 11:41:57.226 fjp-cordova-final[2369:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-19 11:41:57.228 fjp-cordova-final[2369:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-19 11:41:57.230 fjp-cordova-final[2369:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-19 11:41:57.328 fjp-cordova-final[2369:a0b] Resetting plugins due to page load.
+2014-05-19 11:41:57.986 fjp-cordova-final[2369:a0b] Finished load of: file:///Users/frangucc/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/761233B2-2289-492E-A335-AD92736522E7/fjp-cordova-final.app/www/index.html#/home
+2014-05-19 11:56:39.700 HelloCordova[8351:a0b] Multi-tasking -> Device: YES, App: YES
+2014-05-19 11:56:39.707 HelloCordova[8351:a0b] Unlimited access to network resources
+2014-05-19 11:56:39.717 HelloCordova[8351:a0b] Fix applied for database locations?: YES
+2014-05-19 11:56:39.718 HelloCordova[8351:a0b] Restoring old webstorage backup. From: '/Users/frangucc/Library/Application Support/iPhone Simulator/7.0.3/Applications/7197F029-CC02-45F7-9E73-FEF9C46E6556/Library/WebKit/LocalStorage/file__0.localstorage' To: '/Users/frangucc/Library/Application Support/iPhone Simulator/7.0.3/Applications/7197F029-CC02-45F7-9E73-FEF9C46E6556/Library/Caches/file__0.localstorage'.
+2014-05-19 11:56:39.721 HelloCordova[8351:a0b] Removing old webstorage backup: '/Users/frangucc/Library/Application Support/iPhone Simulator/7.0.3/Applications/7197F029-CC02-45F7-9E73-FEF9C46E6556/Library/WebKit/LocalStorage/file__0.localstorage'.
+2014-05-19 11:56:39.754 HelloCordova[8351:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-19 11:56:39.754 HelloCordova[8351:a0b] [CDVTimer][splashscreen] 16.451001ms
+2014-05-19 11:56:39.757 HelloCordova[8351:a0b] [CDVTimer][statusbar] 2.495944ms
+2014-05-19 11:56:39.757 HelloCordova[8351:a0b] [CDVTimer][TotalPluginStartup] 19.734979ms
+2014-05-19 11:56:39.763 HelloCordova[8351:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-19 11:56:39.765 HelloCordova[8351:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-19 11:56:39.766 HelloCordova[8351:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-19 11:56:39.901 HelloCordova[8351:a0b] Resetting plugins due to page load.
+2014-05-19 11:56:40.435 HelloCordova[8351:a0b] Finished load of: file:///Users/frangucc/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/7197F029-CC02-45F7-9E73-FEF9C46E6556/HelloCordova.app/www/index.html#/app/playlists
+2014-05-30 09:37:06.826 HelloCordova[10728:a0b] Multi-tasking -> Device: YES, App: YES
+2014-05-30 09:37:06.861 HelloCordova[10728:a0b] Unlimited access to network resources
+2014-05-30 09:37:07.223 HelloCordova[10728:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 09:37:07.224 HelloCordova[10728:a0b] [CDVTimer][splashscreen] 110.831976ms
+2014-05-30 09:37:07.227 HelloCordova[10728:a0b] [CDVTimer][statusbar] 3.049970ms
+2014-05-30 09:37:07.228 HelloCordova[10728:a0b] [CDVTimer][TotalPluginStartup] 114.888012ms
+2014-05-30 09:37:07.229 HelloCordova[10728:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 09:37:07.234 HelloCordova[10728:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 09:37:07.236 HelloCordova[10728:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 09:37:07.352 HelloCordova[10728:a0b] Resetting plugins due to page load.
+2014-05-30 09:37:07.896 HelloCordova[10728:a0b] Finished load of: file:///Users/frangucc/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/7197F029-CC02-45F7-9E73-FEF9C46E6556/HelloCordova.app/www/index.html#/app/playlists
+2014-05-30 09:39:50.652 HelloCordova[15808:a0b] Multi-tasking -> Device: YES, App: YES
+2014-05-30 09:39:50.662 HelloCordova[15808:a0b] Unlimited access to network resources
+2014-05-30 09:39:50.717 HelloCordova[15808:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 09:39:50.717 HelloCordova[15808:a0b] [CDVTimer][splashscreen] 25.627017ms
+2014-05-30 09:39:50.721 HelloCordova[15808:a0b] [CDVTimer][statusbar] 2.530992ms
+2014-05-30 09:39:50.721 HelloCordova[15808:a0b] [CDVTimer][TotalPluginStartup] 29.253960ms
+2014-05-30 09:39:50.722 HelloCordova[15808:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 09:39:50.725 HelloCordova[15808:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 09:39:50.727 HelloCordova[15808:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 09:39:50.853 HelloCordova[15808:a0b] Resetting plugins due to page load.
+2014-05-30 09:39:51.489 HelloCordova[15808:a0b] Finished load of: file:///Users/frangucc/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/7197F029-CC02-45F7-9E73-FEF9C46E6556/HelloCordova.app/www/index.html#/app/playlists
+2014-05-30 10:09:25.402 HelloCordova[46261:a0b] Multi-tasking -> Device: YES, App: YES
+2014-05-30 10:09:25.435 HelloCordova[46261:a0b] Unlimited access to network resources
+2014-05-30 10:09:25.686 HelloCordova[46261:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 10:09:25.686 HelloCordova[46261:a0b] [CDVTimer][splashscreen] 79.939008ms
+2014-05-30 10:09:25.689 HelloCordova[46261:a0b] [CDVTimer][statusbar] 2.433002ms
+2014-05-30 10:09:25.690 HelloCordova[46261:a0b] [CDVTimer][TotalPluginStartup] 83.177984ms
+2014-05-30 10:09:25.694 HelloCordova[46261:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 10:09:25.701 HelloCordova[46261:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 10:09:25.702 HelloCordova[46261:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 10:09:25.881 HelloCordova[46261:a0b] Resetting plugins due to page load.
+2014-05-30 10:09:25.960 HelloCordova[46261:a0b] Failed to load webpage with error: The operation couldn’t be completed. (NSURLErrorDomain error -999.)
+2014-05-30 10:09:25.961 HelloCordova[46261:a0b] Resetting plugins due to page load.
+2014-05-30 10:09:25.963 HelloCordova[46261:a0b] Failed to load webpage with error: Frame load interrupted
+2014-05-30 10:12:05.848 HelloCordova[61001:a0b] Multi-tasking -> Device: YES, App: YES
+2014-05-30 10:12:05.878 HelloCordova[61001:a0b] Unlimited access to network resources
+2014-05-30 10:12:06.117 HelloCordova[61001:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 10:12:06.117 HelloCordova[61001:a0b] [CDVTimer][splashscreen] 77.614963ms
+2014-05-30 10:12:06.121 HelloCordova[61001:a0b] [CDVTimer][statusbar] 3.082037ms
+2014-05-30 10:12:06.121 HelloCordova[61001:a0b] [CDVTimer][TotalPluginStartup] 81.714988ms
+2014-05-30 10:12:06.125 HelloCordova[61001:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 10:12:06.133 HelloCordova[61001:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 10:12:06.134 HelloCordova[61001:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 10:12:06.302 HelloCordova[61001:a0b] Resetting plugins due to page load.
+2014-05-30 10:12:06.373 HelloCordova[61001:a0b] Failed to load webpage with error: The operation couldn’t be completed. (NSURLErrorDomain error -999.)
+2014-05-30 10:12:06.374 HelloCordova[61001:a0b] Resetting plugins due to page load.
+2014-05-30 10:12:06.377 HelloCordova[61001:a0b] Failed to load webpage with error: Frame load interrupted
+2014-05-30 10:18:59.880 HelloCordova[66768:a0b] Multi-tasking -> Device: YES, App: YES
+2014-05-30 10:18:59.904 HelloCordova[66768:a0b] Unlimited access to network resources
+2014-05-30 10:19:00.133 HelloCordova[66768:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 10:19:00.134 HelloCordova[66768:a0b] [CDVTimer][splashscreen] 77.040017ms
+2014-05-30 10:19:00.137 HelloCordova[66768:a0b] [CDVTimer][statusbar] 2.305984ms
+2014-05-30 10:19:00.137 HelloCordova[66768:a0b] [CDVTimer][TotalPluginStartup] 80.286980ms
+2014-05-30 10:19:00.139 HelloCordova[66768:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 10:19:00.145 HelloCordova[66768:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 10:19:00.146 HelloCordova[66768:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 10:19:00.294 HelloCordova[66768:a0b] Resetting plugins due to page load.
+2014-05-30 10:19:01.895 HelloCordova[66768:a0b] Finished load of: file:///Users/frangucc/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/7197F029-CC02-45F7-9E73-FEF9C46E6556/HelloCordova.app/www/index.html#/home
+2014-05-30 15:45:55.194 StarterApp[16518:a0b] Multi-tasking -> Device: YES, App: YES
+2014-05-30 15:45:55.205 StarterApp[16518:a0b] Unlimited access to network resources
+2014-05-30 15:45:55.239 StarterApp[16518:a0b] [CDVTimer][statusbar] 8.649051ms
+2014-05-30 15:45:55.248 StarterApp[16518:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 15:45:55.249 StarterApp[16518:a0b] [CDVTimer][splashscreen] 9.198964ms
+2014-05-30 15:45:55.249 StarterApp[16518:a0b] [CDVTimer][TotalPluginStartup] 18.769979ms
+2014-05-30 15:45:55.251 StarterApp[16518:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 15:45:55.254 StarterApp[16518:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 15:45:55.255 StarterApp[16518:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 15:45:55.352 StarterApp[16518:a0b] Resetting plugins due to page load.
+2014-05-30 15:45:56.093 StarterApp[16518:a0b] Finished load of: file:///Users/frangucc/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/9D499878-8065-4CDB-9167-E1ABE63A94F0/StarterApp.app/www/index.html#/app/about
+2014-05-30 15:53:39.603 StarterApp[76256:a0b] Multi-tasking -> Device: YES, App: YES
+2014-05-30 15:53:39.611 StarterApp[76256:a0b] Unlimited access to network resources
+2014-05-30 15:53:39.650 StarterApp[76256:a0b] [CDVTimer][statusbar] 13.074040ms
+2014-05-30 15:53:39.658 StarterApp[76256:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 15:53:39.658 StarterApp[76256:a0b] [CDVTimer][splashscreen] 7.291019ms
+2014-05-30 15:53:39.659 StarterApp[76256:a0b] [CDVTimer][TotalPluginStartup] 21.360993ms
+2014-05-30 15:53:39.660 StarterApp[76256:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 15:53:39.663 StarterApp[76256:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 15:53:39.664 StarterApp[76256:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 15:53:39.700 StarterApp[76256:a0b] Resetting plugins due to page load.
+2014-05-30 15:53:40.210 StarterApp[76256:a0b] Finished load of: file:///Users/frangucc/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/9D499878-8065-4CDB-9167-E1ABE63A94F0/StarterApp.app/www/index.html#/app/about
+2014-05-30 16:12:15.733 fjp-cordova-final[56744:a0b] Multi-tasking -> Device: YES, App: YES
+2014-05-30 16:12:15.742 fjp-cordova-final[56744:a0b] Unlimited access to network resources
+2014-05-30 16:12:15.751 fjp-cordova-final[56744:a0b] Fix applied for database locations?: YES
+2014-05-30 16:12:15.804 fjp-cordova-final[56744:a0b] [CDVTimer][statusbar] 37.948012ms
+2014-05-30 16:12:15.812 fjp-cordova-final[56744:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 16:12:15.813 fjp-cordova-final[56744:a0b] [CDVTimer][splashscreen] 7.697999ms
+2014-05-30 16:12:15.813 fjp-cordova-final[56744:a0b] [CDVTimer][TotalPluginStartup] 46.615958ms
+2014-05-30 16:12:15.814 fjp-cordova-final[56744:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 16:12:15.817 fjp-cordova-final[56744:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 16:12:15.818 fjp-cordova-final[56744:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 16:12:15.933 fjp-cordova-final[56744:a0b] Resetting plugins due to page load.
+2014-05-30 16:12:17.099 fjp-cordova-final[56744:a0b] Finished load of: file:///Users/frangucc/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/D4890F2D-5284-4DC0-B5A0-8CD1043285E6/fjp-cordova-final.app/www/index.html#/app/about
+2014-05-30 16:29:08.865 fjp-cordova-final[13095:a0b] Multi-tasking -> Device: YES, App: YES
+2014-05-30 16:29:08.872 fjp-cordova-final[13095:a0b] Unlimited access to network resources
+2014-05-30 16:29:08.908 fjp-cordova-final[13095:a0b] [CDVTimer][statusbar] 11.723995ms
+2014-05-30 16:29:08.934 fjp-cordova-final[13095:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 16:29:08.935 fjp-cordova-final[13095:a0b] [CDVTimer][splashscreen] 26.807010ms
+2014-05-30 16:29:08.935 fjp-cordova-final[13095:a0b] [CDVTimer][TotalPluginStartup] 39.447010ms
+2014-05-30 16:29:08.937 fjp-cordova-final[13095:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 16:29:08.939 fjp-cordova-final[13095:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 16:29:08.940 fjp-cordova-final[13095:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-05-30 16:29:08.977 fjp-cordova-final[13095:a0b] Resetting plugins due to page load.
+2014-05-30 16:29:11.681 fjp-cordova-final[13095:a0b] Finished load of: file:///Users/frangucc/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/D4890F2D-5284-4DC0-B5A0-8CD1043285E6/fjp-cordova-final.app/www/index.html#/app/about
+2014-06-04 11:53:45.494 fjp-cordova-final[41638:a0b] Multi-tasking -> Device: YES, App: YES
+2014-06-04 11:53:45.527 fjp-cordova-final[41638:a0b] Unlimited access to network resources
+2014-06-04 11:53:45.726 fjp-cordova-final[41638:a0b] [CDVTimer][statusbar] 49.474001ms
+2014-06-04 11:53:45.745 fjp-cordova-final[41638:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-06-04 11:53:45.746 fjp-cordova-final[41638:a0b] [CDVTimer][splashscreen] 19.542992ms
+2014-06-04 11:53:45.746 fjp-cordova-final[41638:a0b] [CDVTimer][TotalPluginStartup] 69.826007ms
+2014-06-04 11:53:45.748 fjp-cordova-final[41638:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-06-04 11:53:45.750 fjp-cordova-final[41638:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-06-04 11:53:45.751 fjp-cordova-final[41638:a0b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-06-04 11:53:45.842 fjp-cordova-final[41638:a0b] Resetting plugins due to page load.
+2014-06-04 11:53:46.659 fjp-cordova-final[41638:a0b] Finished load of: file:///Users/frangucc/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/D4890F2D-5284-4DC0-B5A0-8CD1043285E6/fjp-cordova-final.app/www/index.html#/app/about
