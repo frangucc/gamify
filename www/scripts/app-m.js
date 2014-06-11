@@ -112,7 +112,7 @@ angular.module('starter', ['ionic', 'firebase', 'starter.controllers', 'starter.
       }
     });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('app/about');
+  $urlRouterProvider.otherwise('/app/about');
 })
 
 .run(['$firebaseSimpleLogin', 'FIREBASE_URI', '$rootScope', function ($firebaseSimpleLogin, FIREBASE_URI, $rootScope) {

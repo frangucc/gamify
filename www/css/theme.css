@@ -1763,7 +1763,7 @@ section.light {
   background: #ededed;
 }
 section.light.with-bg {
-  background: url('../img/handsbg.jpg') center center no-repeat;
+  /* background: url('../img/handsbg.jpg') center center no-repeat; */
   background-size: cover;
 }
 section.dark {
@@ -1783,7 +1783,7 @@ section.lightsky {
 
 
 section.dark.with-bg {
-  background: url('../img/handsbg.jpg') center center no-repeat;
+  /* background: url('../img/handsbg.jpg') center center no-repeat; */
   background-size: cover;
 }
 section.dark h1,
