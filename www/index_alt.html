@@ -1,0 +1,662 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    
+    <script src="js/device.js"></script>
+    <script type="text/javascript">
+
+        if(device.mobile() === true) {
+          window.location.replace("/www/mobile.html#/app/about");
+        } 
+        else {
+          // do nothing champ
+        }
+    </script>
+    <script>
+    window.onresize=function(){
+    if ( $(this).width() < 724 ) {
+        
+          window.location.replace("/www/mobile.html#/app/about");
+        }
+      };
+    </script>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="ico/favicon.png">
+
+    <title>Prospectwise | Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/magnific-popup.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="js/modernizr.custom.js"></script>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" / -->
+    
+    
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="alternate" href="/" id="phone"
+        media="only screen and (max-device-width: 640px)">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="angularNewsApp">
+
+    <div class="preloader">
+       <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+    </div>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper cbp-af-header">
+      <div class="container">
+
+        <!-- Fixed navbar -->
+        <div class="navbar cbp-af-inner" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <h1><a class="navbar-brand scroll" href="#intro"><img src="img/logo.png" /></a></h1>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav pull-right">
+                <li><a href="#about">About</a></li>
+                <li><a href="#featured1">Features</a></li>
+                <li class="hidden-sm"><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <!-- li><a class="hidden-sm login" href="">Login</a></li>
+                <li><a class="signup" href="">Sign up</a></li -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Hero Banner
+    ================================================== -->
+    <section id="intro" class="lightsky">
+        <div class="item background-cover">
+          
+                <div class="container" ng-view></div>
+        </div>
+
+    </section>
+
+
+
+     <!-- Industries Section
+    ================================================== -->
+    <section id="about" class="content text-center light">
+
+      <div class="container">
+        <!-- Three columns of text below the carousel -->
+        
+      </div>
+
+      <div class="overlay-bg light"></div>
+
+    </section>
+
+
+    <!-- Featured Sections
+    ================================================== -->
+    <section id="featured1" class="sky" 
+
+      <div class="container with-bg">
+        <div class="row">
+          <div class="col-sm-5 overlay-text">
+            <div class="vertical-align">
+              <h2>Blah</h2>
+              <p>city goes here interactively - edge</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+
+    <!-- Testimonials
+    ================================================== -->
+    <section id="testimonials" class="dark with-bg" style="height:800px;">
+
+      <div class="page-header text-center">
+        <h3>Testimonials</h3>
+        <h2>What People are saying</h2>
+      </div>
+
+      <div class="container">
+
+        <div class='row'>
+          <div class='col-md-offset-2 col-md-8'>
+            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+              <!-- Bottom Carousel Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#quote-carousel" data-slide-to="1"></li>
+                <li data-target="#quote-carousel" data-slide-to="2"></li>
+              </ol>
+              
+              <!-- Carousel Slides / Quotes -->
+              <div class="carousel-inner">
+              
+                <!-- Quote 1 -->
+                <div class="item active">
+                  <blockquote>
+                    <div class="row">
+                      <div class="col-sm-3 text-center">
+                        <img class="img-circle" src="img/user-avatar1.jpg">
+                      </div>
+                      <div class="col-sm-9">
+                        <p>"ProspectWise totally rocked my boat"</p>
+                        <small>francke jones- <a href="http://www.twitter.com/heuristx" target="_blank">@hateshisjob</a></small>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- Quote 2 -->
+                
+                <!-- Quote 3 -->
+                <div class="item">
+                  <blockquote>
+                    <div class="row">
+                      <div class="col-sm-3 text-center">
+                        <img class="img-circle" src="img/user-avatar1.jpg">
+                      </div>
+                      <div class="col-sm-9">
+                        <p>"Super easy and I'm glad Joel Clay gave me this opportunity."</p>
+                        <small>Francke Mueller - <a href="" target="_blank">@fmueller</a></small>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+              
+              <!-- Carousel Buttons Next/Prev -->
+              <a data-slide="prev" href="#quote-carousel" class="left carousel-control visible-md visible-lg"><i class="fa fa-chevron-left"></i></a>
+              <a data-slide="next" href="#quote-carousel" class="right carousel-control  visible-md visible-lg"><i class="fa fa-chevron-right"></i></a>
+            </div>                          
+          </div>
+        </div>
+        </div>
+      </div>
+
+    </section>
+
+
+ 
+    <!-- section id="gallery">
+
+      <div class="page-header text-center">
+        <h3>Recent Posts</h3>
+        <h2>Dope sneaks just posted</h2>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="owl-example" class="owl-carousel">
+              <div class="item">
+                <a href="images/s1.jpg" class="popup-gallery">
+                  <img src="images/s1.jpg" alt="Thumbnail Image">
+                </a>
+              </div>
+              <div class="item">
+                <a href="images/s2.jpg" class="popup-gallery">
+                  <img src="images/s2.jpg" alt="Thumbnail Image">
+                </a>
+              </div>
+              <div class="item">
+                <a href="images/s4.jpeg" class="popup-gallery">
+                  <img src="images/s4.jpeg" alt="Thumbnail Image">
+                </a>
+              </div>
+              <div class="item">
+                <a href="images/s3.jpeg" class="popup-gallery">
+                  <img src="images/s3.jpeg" alt="Thumbnail Image">
+                </a>
+              </div>
+              <div class="item">
+                <a href="images/s6.jpg" class="popup-gallery">
+                  <img src="images/s6.jpg" alt="Thumbnail Image">
+                </a>
+              </div>
+              <div class="item">
+                <a href="images/s8.jpeg" class="popup-gallery">
+                  <img src="images/s8.jpeg" alt="Thumbnail Image">
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section -->
+
+    <!-- Pricing
+    ================================================== -->
+    <section id="pricing" class="dark">
+
+      <div class="page-header text-center">
+        <h3>Pricing</h3>
+        <h2></h2>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="plans">
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="plan" data-scrollreveal="enter over 1s">
+                  <div class="plan-title">
+                    <h2>Standard</h2>
+                    <h3><sup>$</sup>2.50<sub></sub></h3>
+                  </div>
+
+                  <ul class="plan-features">
+                    <li>Pay Per Lead</li>
+                    <li>Dedicated Support</li>
+                  </ul>
+                  <div class="plan-cta">
+                    <p class="plan-buy"><a href="#.html" class="btn">Select Plan</a></p>
+                 </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="plan featured" data-scrollreveal="enter over 1s">
+                  <div class="plan-title">
+                    <h2>Premium</h2>
+                    <h3><sup>$</sup>4.75<sub></sub></h3>
+                  </div>
+
+                  <ul class="plan-features">
+                    <li><strong>Priority Prospecting</strong></li>
+                    <li>Certified DTFs</li>
+                  </ul>
+                  <div class="plan-cta">
+                    <p class="plan-buy"><a href="#.html" class="btn">Select plan</a></p>
+                 </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="plan featured" data-scrollreveal="enter over 1s">
+                  <div class="plan-title">
+                    <h2>Enterprise</h2>
+                    <h3><sup></sup>Call<sub></sub></h3>
+                  </div>
+
+                  <ul class="plan-features">
+                    <li><strong>All Sorts of Crap</strong></li>
+                    <li>Certified DTFs</li>
+                  </ul>
+                  <div class="plan-cta">
+                    <p class="plan-buy"><a href="#.html" class="btn">Contact Us</a></p>
+                 </div>
+                </div>
+              </div>
+
+              
+            </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Call to Action
+    ================================================== -->
+    <section class="cta text-center">
+
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Request 100 Free Sample Leads</h2>
+            <p><a href="#" class="btn signup" role="button">Get started</a></p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer id="contact" class="footer">
+
+      <div class="container">    
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="col-sm-3 col-md-3">
+              <div class="footer-logo">
+                <h2></h2>
+                <p>1221 Grove Ave.<br>+1 (312) 806 7979</p>
+                <br>
+                <p class="muted">© 2014 Prospectwise</p>
+                <a href="#">Terms of Service</a>    
+                <a href="#">Privacy</a>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-3">
+              <h3>Product</h3>
+              <ul class="list-unstyled">
+                <li><a href="#">Product for Sales Teams</a></li>
+                <li><a href="#">Product for Market Research</a></li>
+                <li><a href="#">Product for Government</a></li>           
+              </ul>
+            </div>
+            <div class="col-sm-3 col-md-3">
+              <h3>Company</h3>
+              <ul class="list-unstyled">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Jobs&emsp;<span class="label label-info">We're hiring!</span></a></li>           
+              </ul>
+            </div>
+            <div class="col-sm-3 col-md-3">
+              <h3>Documentation</h3>
+              <ul class="list-unstyled">
+                <li><a href="#">Product Help</a></li>
+                <li><a href="#">Developer API</a></li>
+                <li><a href="#">Tasker Portal</a></li>             
+              </ul>
+            </div>  
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+
+        </footer>
+
+    <div id="login" class="overlay overlay-content">
+  
+      <button type="button" class="overlay-close">Close</button>
+      <section class="login-part">
+        <p class="login-overlay">
+          Log In
+        </p>
+        <form method="post">
+          <input class="form-control" type="email" name="u" placeholder="Email" required="required" />
+          <input class="form-control" type="password" name="p" placeholder="Password" required="required" />
+          <button type="submit" class="btn btn-primary btn-block btn-large">Log me in</button>
+          <a href="#" class="forgot-pw">Forgot password? We can help!</a>
+        </form>
+       </section>
+      
+    </div>
+
+    <div id="signup" class="overlay overlay-content">
+  
+      <button type="button" class="overlay-close">Close</button>
+      <section class="login-part">
+        <p class="login-overlay">
+          Sign up for Prospectwise
+        </p>
+        <form method="post">
+          <input class="form-control" type="text" name="email" placeholder="Email" required="required" />
+          <input class="form-control" type="password" name="pw" placeholder="Password" required="required" />
+          <input class="form-control" type="password" name="repeat-pw" placeholder="Repeat Password" required="required" />
+          <button type="submit" class="btn btn-primary btn-block btn-large">Get started</button>
+          <p class="disclaimer">By signing up, you agree with our <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a></p>
+        </form>
+       </section>
+      
+    </div>
+    
+    
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <!-- script src="bower_components/bootstrap/dist/js/bootstrap.js"></script -->
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/firebase-simple-login/firebase-simple-login.js"></script>
+    <script src="bower_components/angularfire/angularfire.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/posts.js"></script>
+        <script src="scripts/controllers/postview.js"></script>
+        <script src="scripts/controllers/nav.js"></script>
+        <script src="scripts/controllers/auth.js"></script>
+        <script src="scripts/services/auth.js"></script>
+        <script src="scripts/services/post.js"></script>
+        <script src="scripts/filters/url.js"></script>
+        <!-- endbuild -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/hammer.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/scrollReveal.js"></script>
+    <script src="js/isotope.min.js" defer="defer"></script>
+    <script src="js/imagesloaded.pkgd.min.js" defer="defer"></script>
+    <script src="js/jquery.scrollTo.js" defer="defer"></script>
+    <script src="js/jquery.nav.js" defer="defer"></script>
+    <script src="js/jquery.magnific-popup.min.js" defer="defer"></script>
+    <script src="js/jqBootstrapValidation.js" defer="defer"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
+
+    <script>
+
+      $(document).ready(function(){
+        $(".player").mb_YTPlayer();
+        isotope();
+      });
+
+    </script>
+
+    <!-- Hammer JS Francke Jones -->
+    <script>
+
+    /**
+    * super simple carousel
+    * animation between panes happens with css transitions
+    */
+    function Carousel(element)
+    {
+        var self = this;
+        element = $(element);
+
+        var container = $(">ul", element);
+        var panes = $(">ul>li", element);
+
+        var pane_width = 0;
+        var pane_count = panes.length;
+
+        var current_pane = 0;
+
+
+        /**
+         * initial
+         */
+        this.init = function() {
+            setPaneDimensions();
+
+            $(window).on("load resize orientationchange", function() {
+                setPaneDimensions();
+            })
+        };
+
+
+        /**
+         * set the pane dimensions and scale the container
+         */
+        function setPaneDimensions() {
+            pane_width = element.width();
+            panes.each(function() {
+                $(this).width(pane_width);
+            });
+            container.width(pane_width*pane_count);
+        };
+
+
+        /**
+         * show pane by index
+         */
+        this.showPane = function(index, animate) {
+            // between the bounds
+            index = Math.max(0, Math.min(index, pane_count-1));
+            current_pane = index;
+
+            var offset = -((100/pane_count)*current_pane);
+            setContainerOffset(offset, animate);
+        };
+
+
+        function setContainerOffset(percent, animate) {
+            container.removeClass("animate");
+
+            if(animate) {
+                container.addClass("animate");
+            }
+
+            if(Modernizr.csstransforms3d) {
+                container.css("transform", "translate3d("+ percent +"%,0,0) scale3d(1,1,1)");
+            }
+            else if(Modernizr.csstransforms) {
+                container.css("transform", "translate("+ percent +"%,0)");
+            }
+            else {
+                var px = ((pane_width*pane_count) / 100) * percent;
+                container.css("left", px+"px");
+            }
+        }
+
+        this.next = function() { return this.showPane(current_pane+1, true); };
+        this.prev = function() { return this.showPane(current_pane-1, true); };
+
+
+        function handleHammer(ev) {
+            // disable browser scrolling
+            ev.gesture.preventDefault();
+
+            switch(ev.type) {
+                case 'dragright':
+                case 'dragleft':
+                    // stick to the finger
+                    var pane_offset = -(100/pane_count)*current_pane;
+                    var drag_offset = ((100/pane_width)*ev.gesture.deltaX) / pane_count;
+
+                    // slow down at the first and last pane
+                    if((current_pane == 0 && ev.gesture.direction == "right") ||
+                        (current_pane == pane_count-1 && ev.gesture.direction == "left")) {
+                        drag_offset *= .4;
+                    }
+
+                    setContainerOffset(drag_offset + pane_offset);
+                    break;
+
+                case 'swipeleft':
+                    self.next();
+                    ev.gesture.stopDetect();
+                    break;
+
+                case 'swiperight':
+                    self.prev();
+                    ev.gesture.stopDetect();
+                    break;
+
+                case 'release':
+                    // more then 50% moved, navigate
+                    if(Math.abs(ev.gesture.deltaX) > pane_width/2) {
+                        if(ev.gesture.direction == 'right') {
+                            self.prev();
+                        } else {
+                            self.next();
+                        }
+                    }
+                    else {
+                        self.showPane(current_pane, true);
+                    }
+                    break;
+            }
+        }
+
+        new Hammer(element[0], { dragLockToAxis: true }).on("release dragleft dragright swipeleft swiperight", handleHammer);
+    }
+
+    var carousel = new Carousel("#carousel");
+    carousel.init();
+
+    </script>
+
+    
+</body>
+</html>

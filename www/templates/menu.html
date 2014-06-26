@@ -1,3 +1,4 @@
+<link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet">
 <ion-side-menus>
 
     <ion-pane ion-side-menu-content>
@@ -12,34 +13,51 @@
         <ion-content>
             <ion-list>
                 <ion-item nav-clear menu-close href="#/app/search" style="background-color:#2b2f33;">
-                    <i class="icon ion-monitor" ></i><span>How it Works</span>
+                    
+                <i class="icon ion-compass" style="color:#fff;"></i>Start Career</a>
                 </ion-item>
                 <ion-item nav-clear menu-close href="#/app/about">
-                    <i class="icon ion-arrow-right-b"></i>Tour
+                    <i class="icon ion-social-buffer"></i>Levels
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/about">
+                    <i class="icon ion-ribbon-a"></i>Your Score
                 </ion-item>
                 <ion-item nav-clear menu-close href="#/app/team">
-                    <i class="icon ion-person-stalker"></i>Our Team
+                    <i class="icon ion-ios7-football"></i>How to Play
                 </ion-item>
                 <ion-item nav-clear menu-close href="#/app/tasker">
-                    <i class="icon ion-clipboard"></i>Taksers
+                    <i class="icon ion-android-star"  style="color:yellow;"></i>Club Members
                 </ion-item>
                 <ion-item nav-clear menu-close href="#/app/jobs">
-                    <i class="icon ion-android-star" style="color:yellow;"></i>We're Hiring!
+                    <i class="icon ion-trophy"></i><span>Tournaments</span>
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/jobs">
+                    <i class="icon ion-person-stalker" ></i><span>Invite Teammates</span>
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/jobs">
+                    <i class="icon ion-cash" ></i><span>Guardians</span>
+                </ion-item>
+                <ion-item nav-clear menu-close href="pricing.html">
+                    <i class="icon ion-locked" ></i><span>Unlock Subscription</span>
                 </ion-item>
                 
-                <ion-item nav-clear menu-close href="#/app/signin" ng-hide="loginObj.user !== null">
+                <ion-item nav-clear menu-close href="#/app/login" ng-hide="user !== null">
                     <i class="icon ion-clipboard"></i>Login
                 </ion-item>
-                <ion-item nav-clear menu-close href="#/app/signup" ng-hide="loginObj.user !== null">
+                <ion-item nav-clear menu-close href="#/app/signup" ng-hide="user !== null">
                     <i class="icon ion-compose"></i>Sign up
                 </ion-item>
-                <ion-item nav-clear menu-close href="#/app/account" ng-hide="loginObj.user === null">
-                    Account Details
+                <ion-item nav-clear menu-close href="#/app/account" ng-hide="user === null">
+                    Account Details {{ user.first_name }}
                 </ion-item>
-                <ion-item nav-clear menu-close ng-click="loginObj.$logout()" ng-hide="loginObj.user === null">
-                    Logout
+                <ion-item nav-clear menu-close ng-click="user.logout()" ng-hide="user === null" ua-logout>
+                    <i ng-show="loading" class="ion-loading-b"></i>Logout
                 </ion-item>
             </ion-list>
         </ion-content>
     </ion-side-menu>
 </ion-side-menus>
+
+
+
+    

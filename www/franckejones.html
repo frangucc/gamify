@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Blueprint: Nested Accordion</title>
+		<meta name="description" content="Blueprint: Nested Accordion" />
+		<meta name="keywords" content="nested, accordion, simple, vertical, web development, css3, javascript" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/accord_default.css" />
+		<link rel="stylesheet" type="text/css" href="css/accord_component.css" />
+				<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/push_default.css" />
+		<link rel="stylesheet" type="text/css" href="css/push_component.css" />
+				<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/book_demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+		<link rel="stylesheet" type="text/css" href="css/book_component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body class="cbp-spmenu-push" style="background-color:#282828;background-image:url('http://cl.ly/W5Mj/bg.jpg');background-size:cover;">
+		
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+			<h3>My Sanbox</h3>
+			<a href="/www/blog.html">Gamify</a>
+			<a href="/www/sandbox/ticketbar/public/">TicketBar.io</a>
+			<a href="https://gist.github.com/frangucc/8014d3eddd0abe406fff" target="_blank">#UP!</a>
+			<a href="#">UX Stuff</a>
+			<a href="#">Ionic</a>
+			<a href="#">Famo.us</a>
+			<a href="#">Ten Page Books</a>
+			<a href="#">Twillio</a>
+			<a href="#">Chatyeo</a>
+		</nav>
+		
+		<nav style="position:absolute;right:40px;top:45px;">
+					<a style="cursor:pointer;color:#ff2e63;" class="icon-arrow-left" id="showRightPush" data-info="my sandbox"> sandbox</a>
+				</nav>
+		<div class="hometext">Hello, I'm Francke Jones, a travelling designer &amp; developer. I go wherever there is fulfilling work to be done.<br /><br />This is where I show off my skills so you'll <a href="#">hire me.</a><br /><br />I've worked for <span ><a href="#">Avenue,</a> <a href="#">Manifest Digital,</a> <a href="#">Lightbank,</a> <a href="#">Groupon,</a>  <a href="#">Monthlys,</a>  <a href="#">Raise,</a>  <a href="#">Code Academy,</a>  <a href="#">General Assembly</a> </span> and a few <a href="#">other</a> lesser known companies.</div> 
+
+		<div class="container">
+			<header class="clearfix">
+				<span><a href="/www/blog.html" style="color:#ff2e63;position:relative;left:-36px;"><img src="img/francke.png" style="width:60px;position:relative;top:20px;left:-20px;" />FRANCKE JONES, circa 1999</a></span>
+				
+			</header>	
+			<div class="main">
+				<ul id="cbp-ntaccordion" class="cbp-ntaccordion">
+					<li>
+						<h3 class="cbp-nttrigger threeski">Research</h3>
+						<div class="cbp-ntcontent">
+							<p>My personal expiratmentation.</p>
+							<ul class="cbp-ntsubaccordion">
+								<li>
+									<h4 class="cbp-nttrigger">Angular &amp; Firebase</h4>
+									<div class="cbp-ntcontent">
+										<p></p>
+				<div class="">
+				<div id="grid-gallery" class="grid-gallery">
+				<section class="grid-wrap">
+					<ul class="grid">
+						<li class="grid-sizer"></li><!-- for Masonry column width -->
+						<li>
+							<figure>
+								<img src="http://cl.ly/W5ci/hybrid_thumb2.jpg" alt="img01"/>
+								<figcaption><h3>HTML5 Hybird Mobile Web Apps</h3><p>New technologies in 2014 now make hybrid apps realistic as a foundation for digitial properties. I list a series of apps that I've been creating with these technologies.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="http://cl.ly/W4tQ/cst_logo.jpg" alt="img02"/>
+								<figcaption><h3>CST Cross Platform Prototype</h3><p>In November 2013, designed and developed the Chicago Sun Times main news app in iOS. Subsequently, wrote the app as a hybrid using Angular and Ionic. Check this out.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="http://cl.ly/W4bh/fj_thumb.jpg" alt="img03"/>
+								<figcaption><h3>Francke Jones Mobile Portfolio</h3><p>Here I use Ionic, Angular and Firebase to power my 2013 personal portfolio app.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="http://cl.ly/W5bA/seed_thumb.jpg" alt="img04"/>
+								<figcaption><h3>My Angular Seed Projects</h3><p>Have compared some patterns of the top Angular stars starter projects. Can easily tell you which patterns I think are the best.</p></figcaption>
+							</figure>
+						</li>
+						
+					</ul>
+				</section><!-- // grid-wrap -->
+				<section class="slideshow">
+					<ul>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Angular, Ionic and Cordova</h3>
+									<p>Try my hybrid on your mobile phone. Supply your number and I'll text you the link.<input type="text" value="312-806-7979" /> or <a href="http://localhost:5000/www/mobile/www/#/app/playlists">launch in your browser</a></p>
+								</figcaption>
+								<img src="http://cl.ly/W5Cg/hybrid_thumb.jpg" alt="img01"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Chicago Sun Times Cross Platform</h3>
+									<p>Full Resolution Design Deck - <a href="http://f.cl.ly/items/1c3C1v2S242E2t3j0h2u/Francke2.jpg" target="_blank">View Complete Design Deck</a></p>
+								</figcaption>
+								<img src="http://cl.ly/W4ns/cst.jpg" alt="img02"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Brunch semiotics</h3>
+									<p>IPhone PBR polaroid before they sold out meh you probably haven't heard of them leggings tattooed tote bag, butcher paleo next level single-origin coffee photo booth.</p>
+								</figcaption>
+								<img src="img/large/3.png" alt="img03"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Brunch semiotics</h3>
+									<p>IPhone PBR polaroid before they sold out meh you probably haven't heard of them leggings tattooed tote bag, butcher paleo next level single-origin coffee photo booth.</p>
+								</figcaption>
+								<img src="img/large/3.png" alt="img04"/>
+							</figure>
+						</li>
+						
+					</ul>
+					<nav>
+						<span class="icon nav-prev"></span>
+						<span class="icon nav-next"></span>
+						<span class="icon nav-close"></span>
+					</nav>
+					<div class="info-keys icon">Navigate with arrow keys</div>
+				</section><!-- // slideshow -->
+			</div><!-- // grid-gallery -->
+				</div>
+									</div>
+								</li>
+								<li>
+									<h4 class="cbp-nttrigger">New Prototypes</h4>
+									<div class="cbp-ntcontent">
+										<p>Simba, Tround, Gamify - prototyping is one of my favorite things to do. Have done some wonderful things recently with Invision.</p>
+										<div class="">
+				<div id="grid-gallery2" class="grid-gallery">
+				<section class="grid-wrap">
+					<ul class="grid">
+						<li class="grid-sizer"></li><!-- for Masonry column width -->
+						<li>
+							<figure>
+								<img src="http://cl.ly/W4dj/gamify_thumb.jpg" alt="img05"/>
+								<figcaption><h3>Gamify</h3><p>App centered around youth mechanics training.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="http://cl.ly/W4l7/tround_thumb2.jpg" alt="img06"/>
+								<figcaption><h3>Tround</h3><p>Todo list based on trending geotagged photos from around the world.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="http://cl.ly/W4tJ/simba_thumb.jpg" alt="img07"/>
+								<figcaption><h3>Simba</h3><p>Make the wake and funeral notification, donation and memorializing process a million times better than it is today.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/portfolio/curioshi_thumb.jpg" alt="img101"/>
+								<figcaption><h3>Curioshi, Node.js</h3><p>First node.js project, chat server that captures keywords in text and visualizes them by exploiting a dozen different API's.</p></figcaption>
+							</figure>
+						</li>
+						
+						
+						
+						
+					</ul>
+				</section><!-- // grid-wrap -->
+				<section class="slideshow">
+					<ul>
+						
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Gamify</h3>
+									<p>Full Resolution Design Deck - <a href="http://cl.ly/W4ht/gamify.jpg" target="_blank">View Complete Design Deck</a></p>
+								</figcaption>
+								<img src="http://cl.ly/W4ht/gamify.jpg" alt="img05"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Tround</h3>
+									<p>Full Resolution Design Deck - <a href="http://cl.ly/W4k7/tround.jpg" target="_blank">View Complete Design Deck</a></p>
+								</figcaption>
+								<img src="http://cl.ly/W4k7/tround.jpg" alt="img06"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Simba</h3>
+									<p>Just a few screens taken from a clickable prototype.<a href="http://cl.ly/W4Rg/simba.jpg" target="_blank"> Higher Resolution</a></p>
+								</figcaption>
+								<img src="http://cl.ly/W5MK/simba_x.jpg" alt="img07"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Curioshi</h3>
+									<p>Curioshi was my original Chatyeo server re-written in Node.js. Originally, Chatyeo was written in Erlang.<a href="http://cl.ly/W5vN/curioshi.jpg" target="_blank"> Higher Resolution</a></p>
+								</figcaption>
+								<img src="img/portfolio/curioshi.jpg" alt="img101"/>
+							</figure>
+						</li>
+						
+						
+					</ul>
+					<nav>
+						<span class="icon nav-prev"></span>
+						<span class="icon nav-next"></span>
+						<span class="icon nav-close"></span>
+					</nav>
+					<div class="info-keys icon">Navigate with arrow keys</div>
+				</section><!-- // slideshow -->
+			</div><!-- // grid-gallery -->
+				</div>
+									</div>
+								</li>
+								<li>
+									<h4 class="cbp-nttrigger">Getup, Ionic and Famo.us</h4>
+									<div class="cbp-ntcontent">
+										<p>Hybrid Apps in 2014 will be different</p>
+										<div class="">
+				<div id="grid-gallery3" class="grid-gallery">
+				<section class="grid-wrap">
+					<ul class="grid">
+						<li class="grid-sizer"></li><!-- for Masonry column width -->
+						<li>
+							<figure>
+								<img src="img/portfolio/ionic_thumb.jpg" alt="img08"/>
+								<figcaption><h3>Ionic</h3><p>New framework built ontop of Cordova, based on Angular.js. Helps create incredibly native feeling experiences in HTML 5.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/portfolio/ng_cordova_thumb.jpg" alt="img09"/>
+								<figcaption><h3>NG Cordova</h3><p>NG Cordova is a new library that's making cordova eaiser to work within inside of Angular.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/portfolio/up_thumb.jpg" alt="img10"/>
+								<figcaption><h3>Get #UP!</h3><p>#UP! get's your computer ready for cross platform development.</p></figcaption>
+							</figure>
+						</li>
+						
+						
+						
+						
+						
+					</ul>
+				</section><!-- // grid-wrap -->
+				<section class="slideshow">
+					<ul>
+						
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Gamify</h3>
+									<p>Full Resolution Design Deck - <a href="http://cl.ly/W4ht/gamify.jpg" target="_blank">View Complete Design Deck</a></p>
+								</figcaption>
+								<img src="http://cl.ly/W4ht/gamify.jpg" alt="img08"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>NGCordova</h3>
+									<p>Never touch Cordova/Phonegap. Clean Angular API for using Cordova to do things like, access contacts natively, camera, video, geo, accelerometer, etc. Get with the program: <a href="http://ngcordova.com/docs/">NGCordova</a></p>
+								</figcaption>
+								<img src="img/portfolio/ngcordova.jpg" alt="img09"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Get #UP!</h3>
+									<p>Watch as I devour cross-platform.</p>
+								</figcaption>
+								<iframe width="560" height="315" src="//www.youtube.com/embed/bS-txYG96wE" frameborder="0" allowfullscreen></iframe>
+							</figure>
+						</li>
+						
+					</ul>
+					<nav>
+						<span class="icon nav-prev"></span>
+						<span class="icon nav-next"></span>
+						<span class="icon nav-close"></span>
+					</nav>
+					<div class="info-keys icon">Navigate with arrow keys</div>
+				</section><!-- // slideshow -->
+			</div><!-- // grid-gallery -->
+				</div>
+									
+
+
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<h3 class="cbp-nttrigger threeski">Recent Projects</h3>
+						<div class="cbp-ntcontent">
+							<p>Many of these projects are in their early stages.</p>
+							<ul class="cbp-ntsubaccordion">
+								<li>
+									<h4 class="cbp-nttrigger">Development</h4>
+									<div class="cbp-ntcontent">
+										<p>Liquorice jelly-o oat cake gingerbread chocolate caramels chupa chups muffin candy.</p>
+													
+				<div id="grid-gallery4" class="grid-gallery">
+				<section class="grid-wrap">
+					<ul class="grid">
+						<li class="grid-sizer"></li><!-- for Masonry column width -->
+						
+						<li>
+							<figure>
+								<img src="http://cl.ly/W4tQ/cst_logo.jpg" alt="img11"/>
+								<figcaption><h3>Chicago Sun Times Native iOS App</h3><p>Paired with another iOS developer on the CST's new native iOS app.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/portfolio/koupon_thumb.jpg" alt="img12"/>
+								<figcaption><h3>Kou.pn Media Design &amp; Front End</h3><p>Reimagined a Series C company's entire product design, experience and developed the front-end.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/portfolio/ticketbar_thumb.jpg" alt="img13"/>
+								<figcaption><h3>Angular Web App</h3><p>New technologies in 2014 now make hybrid apps realistic as a foundation for digitial properties. I list a series of apps that I've been creating with these technologies.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/portfolio/monthlys_thumb.jpg" alt="img14"/>
+								<figcaption><h3>Ruby on Rails</h3><p>Lead architect and front-end evangelist for entire project.</p></figcaption>
+							</figure>
+						</li>
+						
+					</ul>
+				</section><!-- // grid-wrap -->
+				<section class="slideshow">
+					<ul>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Letterpress asymmetrical</h3>
+									<p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+								</figcaption>
+								<img src="http://cl.ly/W5Cg/hybrid_thumb.jpg" alt="img11"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Chicago Sun Times Cross Platform</h3>
+									<p>Full Resolution Design Deck - <a href="http://f.cl.ly/items/1c3C1v2S242E2t3j0h2u/Francke2.jpg" target="_blank">View Complete Design Deck</a></p>
+								</figcaption>
+								<img src="http://cl.ly/W4ns/cst.jpg" alt="img12"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Brunch semiotics</h3>
+									<p>IPhone PBR polaroid before they sold out meh you probably haven't heard of them leggings tattooed tote bag, butcher paleo next level single-origin coffee photo booth.</p>
+								</figcaption>
+								<img src="img/large/3.png" alt="img13"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Brunch semiotics</h3>
+									<p>IPhone PBR polaroid before they sold out meh you probably haven't heard of them leggings tattooed tote bag, butcher paleo next level single-origin coffee photo booth.</p>
+								</figcaption>
+								<img src="img/large/3.png" alt="img14"/>
+							</figure>
+						</li>
+						
+					</ul>
+					<nav>
+						<span class="icon nav-prev"></span>
+						<span class="icon nav-next"></span>
+						<span class="icon nav-close"></span>
+					</nav>
+					<div class="info-keys icon">Navigate with arrow keys</div>
+				</section><!-- // slideshow -->
+			</div><!-- // grid-gallery -->
+				</div>
+							
+								</li>
+								<li>
+									<h4 class="cbp-nttrigger">Design</h4>
+									<div class="cbp-ntcontent">
+										<p>Simba, Tround, Gamify - prototyping is one of my favorite things to do. Have done some wonderful things recently with Invision.</p>
+										
+				<div id="grid-gallery5" class="grid-gallery">
+				<section class="grid-wrap">
+					<ul class="grid">
+						<li class="grid-sizer"></li><!-- for Masonry column width -->
+						<li>
+							<figure>
+								<img src="img/portfolio/unite_thumb6.jpg" alt="img15"/>
+								<figcaption><h3>Unite4Good Conceptual Design</h3><p>Did not win bid to build this landing page - a unique design none the less.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/portfolio/bsb_thumb.jpg" alt="img16"/>
+								<figcaption><h3>BodyShopBids Transactional Email System</h3><p>RoR, Sendgrid, Delayed Job, Redis. Where were you Customer.io and Mandrill when I needed you?</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/portfolio/benchprep_thumb.jpg" alt="img17"/>
+								<figcaption><h3>Benchprep Art &amp; UX Direction</h3><p>Designed cross platform test prep app on web, native Android and iOS. Massive two year project, from concept to Series B.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/portfolio/medy_thumb.jpg" alt="img18"/>
+								<figcaption><h3>Medycation</h3><p>Kickass healthcare project for Shawn Bercuson, a friend and a mentor. Authored complete art, ux and design framework.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/portfolio/thumb_getable.jpg" alt="img19"/>
+								<figcaption><h3>Getable Web &amp; iOS Design</h3><p>Order rental construction equipment from your phone. Get it same day. Overhauled entire experience.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/portfolio/tagkast_thumb2.jpg" alt="img20"/>
+								<figcaption><h3>Tagkast Android Tablet &amp; Web</h3><p>Photographers at parties take pics and let people tag themselves in the high res photos. Experiential marketing at it's finest.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/portfolio/unite_thumb2.jpg" alt="img21"/>
+								<figcaption><h3>Unite4Good Social Network</h3><p>Designed a complete prototype for a non-profit social network based on the gamification of acts of kindness.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/portfolio/ship_thumb.jpg" alt="img22"/>
+								<figcaption><h3>App Builder</h3><p>Create your own native Android and iOS app with ShipMyApp - designed complete project and user experience.</p></figcaption>
+							</figure>
+						</li>
+						
+						
+						
+					</ul>
+				</section><!-- // grid-wrap -->
+				<section class="slideshow">
+					<ul>
+						
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Gamify</h3>
+									<p>Full Resolution Design Deck - <a href="http://cl.ly/W4ht/gamify.jpg" target="_blank">View Complete Design Deck</a></p>
+								</figcaption>
+								<img src="http://cl.ly/W4ht/gamify.jpg" alt="img15"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Tround</h3>
+									<p>Full Resolution Design Deck - <a href="http://cl.ly/W4k7/tround.jpg" target="_blank">View Complete Design Deck</a></p>
+								</figcaption>
+								<img src="http://cl.ly/W4k7/tround.jpg" alt="img16"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>BenchPrep Explainer</h3>
+									<p>Most of what you see in this video, including the video is my work. My other hobby is film and animation.</p>
+									<br />
+									<iframe src="//player.vimeo.com/video/26066153" width="565" height="331" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								</figcaption>
+								<img src="http://cl.ly/W5MK/simba_x.jpg" alt="img17"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Gamify</h3>
+									<p>Full Resolution Design Deck - <a href="http://cl.ly/W4ht/gamify.jpg" target="_blank">View Complete Design Deck</a></p>
+								</figcaption>
+								<img src="http://cl.ly/W4ht/gamify.jpg" alt="img18"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Tround</h3>
+									<p>Full Resolution Design Deck - <a href="http://cl.ly/W4k7/tround.jpg" target="_blank">View Complete Design Deck</a></p>
+								</figcaption>
+								<img src="http://cl.ly/W4k7/tround.jpg" alt="img19"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Simba</h3>
+									<p>Just a few screens taken from a clickable prototype.<a href="http://cl.ly/W4Rg/simba.jpg" target="_blank"> Higher Resolution</a></p>
+								</figcaption>
+								<img src="http://cl.ly/W5MK/simba_x.jpg" alt="img20"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Tround</h3>
+									<p>Full Resolution Design Deck - <a href="http://cl.ly/W4k7/tround.jpg" target="_blank">View Complete Design Deck</a></p>
+								</figcaption>
+								<img src="http://cl.ly/W4k7/tround.jpg" alt="img21"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Simba</h3>
+									<p>Just a few screens taken from a clickable prototype.<a href="http://cl.ly/W4Rg/simba.jpg" target="_blank"> Higher Resolution</a></p>
+								</figcaption>
+								<img src="http://cl.ly/W5MK/simba_x.jpg" alt="img22"/>
+							</figure>
+						</li>
+						
+					</ul>
+					<nav>
+						<span class="icon nav-prev"></span>
+						<span class="icon nav-next"></span>
+						<span class="icon nav-close"></span>
+					</nav>
+					<div class="info-keys icon">Navigate with arrow keys</div>
+				</section><!-- // slideshow -->
+			</div><!-- // grid-gallery -->
+				</div>
+									
+								</li>
+								
+								<li>
+									<h4 class="cbp-nttrigger">User Research</h4>
+									<div class="cbp-ntcontent">
+										<p>My Experience in User Studies, Consumer Behavior Research, Usability Testing</p>
+
+										<div class="">
+				<div id="grid-gallery6" class="grid-gallery">
+				<section class="grid-wrap">
+					<ul class="grid">
+						<li class="grid-sizer"></li><!-- for Masonry column width -->
+						
+						<li>
+							<figure>
+								<img src="img/portfolio/thumb_dough2.jpg" alt="img28"/>
+								<figcaption><h3>Dough.com Forensic User Research</h3><p>Quant &amp; Qual user research, usability testing and proof of concept exploration for a new type options trading platform.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/portfolio/snapsheet_thumb.jpg" alt="img29"/>
+								<figcaption><h3>Snapsheet UX Research &amp; Design</h3><p>Enterprise software research and design.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/portfolio/zaption_thumb.jpg" alt="img30"/>
+								<figcaption><h3>Zaption.com Usability Testing</h3><p>Tested variations of Zaption's core product with individual users to ensure things we're truly coming across.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/portfolio/pickie_thumb.jpg" alt="img31"/>
+								<figcaption><h3>Pickie, aquired by RetailMeNot</h3><p>Product concept, theory and wireframes to proof-of-concept.</p></figcaption>
+							</figure>
+						</li>
+						
+						
+
+						
+					</ul>
+				</section><!-- // grid-wrap -->
+				<section class="slideshow">
+					<ul>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Letterpress asymmetrical</h3>
+									<p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+								</figcaption>
+								<img src="http://cl.ly/W5Cg/hybrid_thumb.jpg" alt="img28"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Chicago Sun Times Cross Platform</h3>
+									<p>Full Resolution Design Deck - <a href="http://f.cl.ly/items/1c3C1v2S242E2t3j0h2u/Francke2.jpg" target="_blank">View Complete Design Deck</a></p>
+								</figcaption>
+								<img src="http://cl.ly/W4ns/cst.jpg" alt="img29"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Brunch semiotics</h3>
+									<p>IPhone PBR polaroid before they sold out meh you probably haven't heard of them leggings tattooed tote bag, butcher paleo next level single-origin coffee photo booth.</p>
+								</figcaption>
+								<img src="img/large/3.png" alt="img30"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Brunch semiotics</h3>
+									<p>IPhone PBR polaroid before they sold out meh you probably haven't heard of them leggings tattooed tote bag, butcher paleo next level single-origin coffee photo booth.</p>
+								</figcaption>
+								<img src="img/large/3.png" alt="img31"/>
+							</figure>
+						</li>
+					
+					
+						
+					</ul>
+					<nav>
+						<span class="icon nav-prev"></span>
+						<span class="icon nav-next"></span>
+						<span class="icon nav-close"></span>
+					</nav>
+					<div class="info-keys icon">Navigate with arrow keys</div>
+				</section><!-- // slideshow -->
+			</div><!-- // grid-gallery -->
+				</div>
+									</div>
+								</li>
+								
+							</ul>
+						</div>
+					</li>
+					<li>
+						<h3 class="cbp-nttrigger threeski">Ventures</h3>
+						<div class="cbp-ntcontent">
+							<p>Because who doesn't want to be an entrepreneur?</p>
+							<ul class="cbp-ntsubaccordion">
+								<li>
+									<h4 class="cbp-nttrigger">Dillyeo.com</h4>
+									<div class="cbp-ntcontent">
+										<p>Sold my first venture at age twenty-seven (for a small sum), which at the time seemed like a lot. Seven months into the daily deal industry and Dillyeo was shipping a cointainer a week of random goods and electronics. Active since 2006 - the company is now focused mainly on b2b fulfillment and sourcing for industry giants such as Groupon, 1sale, NoMoreRack, Amazon, Walmart.</p><br />
+
+										<iframe src="//player.vimeo.com/video/7880283" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+									</div>
+								</li>
+								<li>
+									<h4 class="cbp-nttrigger">Monthlys.com</h4>
+									<div class="cbp-ntcontent">
+										<p>Entreprenour in residence with Eric Lefkofsky and Brad Keywell of Lightbank in 2012.</p>
+										<br />
+
+										<iframe src="//player.vimeo.com/video/40948597?title=0&amp;byline=0&amp;portrait=0&amp;color=26c7d9" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br /><br />
+									</div>
+								</li>
+								<li>
+									<h4 class="cbp-nttrigger">Gamify Inc.</h4>
+									<div class="cbp-ntcontent">
+										<p>Current venture of choice. Things are going well. Using your freelance donations to help fund my lifelong ambition to breakdown and deliver sports mechanics training for youth athletes.</p><br />
+
+										<iframe width="396" height="834" src="http://invis.io/N3XXTRRM" frameborder="0" allowfullscreen></iframe>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<h3 class="cbp-nttrigger threeski">Resume</h3>
+						<div class="cbp-ntcontent">
+							<p>In short, Francke "Jones" Pinto is a developer/designer hybrid. Capable of full-stack JS based development, Ruby on Rails and Front-end, end-to-end development. He has served the Chicago startup community as a mentor, angel investor and tech-startup evangelist for ten years, four of which in residence at Lightbank.</p> <br />
+
+							<ul class="cbp-ntsubaccordion">
+								<li>
+									<h4 class="cbp-nttrigger">Traditional Resume</h4>
+									<div class="cbp-ntcontent">
+										<p><a href="http://cl.ly/W6wf/Francke%20Pinto%20Resume.pdf" target="_blank">Download PDF Resume</a> and/or watch video below and or catch me on <a href="https://plus.google.com/u/0/104368505327130449944/posts" target="_blank">Google Plus</a></p>
+										<br />
+							<iframe width="560" height="315" src="//www.youtube.com/embed/EfOjBbJLCbQ" frameborder="0" allowfullscreen></iframe>
+							<br /><br />
+									</div>
+								</li>
+								
+							</ul>
+						</div>
+					</li>
+					<li>
+						<h3 class="cbp-nttrigger threeski"><a href="hammer.html">Scrapbook</a></h3>
+						
+					</li>
+					<!-- li >
+						<h3 class="cbp-nttrigger">TenPage Books</h3>
+						<div class="cbp-ntcontent" >
+							<div>
+								
+
+
+<div class="main" >
+					<div id="bookshelf" class="bookshelf">
+													<figure>
+														<div class="book" data-book="book-1"></div>
+														<div class="buttons"><a href="#"></a></div>
+														<div class="details">
+															<ul>
+																<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua.</li>
+																<li>Graham Press</li>
+																<li>12.09.2010</li>
+																<li>397 pages</li>
+															</ul>
+														</div>
+													</figure>
+													
+												</div>
+								
+
+										<div class="bb-custom-wrapper" id="book-1">
+											<div class="bb-bookblock">
+												<div class="bb-item">
+													<div class="bb-custom-side page-layout-3">
+														<div style="margin-top:200px;">
+															
+															<div style="font-size:28px;line-height:51px;">"This booklet is to help decision makers analyze the question of Hybrid over Native." ~ Francke Jones</div>
+														</div>
+													</div>
+													<div class="bb-custom-side page-layout-3">
+														<img src="img/port2.jpg" style="width:95%;" />
+														<p class="francke-font"><strong style="font-size:26px;">Let's not fight</strong><br /><br />
+Right now, at this very moment, pairs of devs everywhere are having heated debates on Native versus Hybrid. For a decision with such large consequences, they may be rightfully so. The argument goes something like this… <br /><br />
+
+“Hybrid apps do not perform like native apps, they are jenky, jittery, slow and so forth. Native code gives you greater flexibility - they are faster, have better local storage and so forth.” <br /><br />
+
+The hybrid evangelist argues back, “you don’t need that much speed and you’re not making a video game for cripes sake, you’re making a simple app. I can have your app done faster and on every platform, including mobile web and web, all at once, all one codebase.”</p>
+													</div>
+												</div>
+												<div class="bb-item">
+													<div class="bb-custom-side page-layout-1">
+														<h3>
+															Ten Pages On <span>Native vs. Hybrid</span>
+														</h3>
+													</div>
+													<div class="bb-custom-side page-layout-1">
+														<p style="font-size:22px;width:95%;">Some people may be asking why only compare Hybrid versus Native, why not compare HTML5 and Mobile Web as well? I only compare the two because with modern Hybrid frameworks, you get mobile web as a byproduct of the hybrid app. And since HTML5 is used to make hybrid apps, it's a moot point to argue anything other than Hybrid or Native. In my opinion, Hybrid should be cross-platform out of the box - or at least that's how my Hybrid apps work today. Later in this book, I'll share my Hybrid starter projects.<br /><br />
+														<img src="img/portrait.jpg" style="width:95%;" /></p>
+													</div>
+												</div>
+												<div class="bb-item">
+													<div class="bb-custom-side page-layout-3">
+														<p class="francke-font">Before we go any further, I have a couple questions for the two devs:<br /><br />
+
+Which one of you can build me my MVP faster? If both answer: in about the same amount of time, 4-5 weeks, they’re probably about right (assuming for the sake of argument, the devs are decent).
+<br /><br />
+Will your users even care or notice your app isn’t native? Is your app more sophisticated than the BBC? What will a native app be able to do that your hybrid app won’t?
+<br /><br />
+Does launching your product cross platform give you important data you’ll need to prove concept? For example, if I show up to a soccer field to promote my soccer app and only 2 out of 10 subscribe and convert because I’m only available on iOS, would saying that 6 out of 10 convert be better?<br /><br /></p>
+													</div>
+													<div class="bb-custom-side page-layout-3">
+														
+														<p class="francke-font">
+If you’ve answered my four questions in the following way: same, no and yes, then hybrid has just gained some new popularity. Also, it’s not necessarily an either or scenario. At my last company, we launched hybrid first while we concurrently kicked off native iOS and Android projects on the side. I have friends in opposite situations where they don’t have access to an iOS or Android developer and are doing Hybrid out of necessity.</p>
+													</div>
+												</div>
+											</div>
+											<nav>
+												<a href="#" class="bb-nav-prev">Previous</a>
+												<a href="#" class="bb-nav-next">Next</a>
+												<a href="#" class="bb-nav-close">Close</a>
+											</nav>
+										</div>
+			</div>
+
+							</div>
+						</div>
+						</div>
+						<br />
+						
+		<div id="scroll-wrap"	>
+			
+			
+		</div>
+					</li -->
+
+				</ul>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquery.cbpNTAccordion.min.js"></script>
+		<script>
+			$( function() {
+				/*
+				- how to call the plugin:
+				$( selector ).cbpNTAccordion( [options] );
+				- destroy:
+				$( selector ).cbpNTAccordion( 'destroy' );
+				*/
+
+				$( '#cbp-ntaccordion' ).cbpNTAccordion();
+				
+
+			} );
+			
+			$( ".threeski" ).click(function() {
+			  $( ".hometext" ).toggle();
+			});
+
+		</script>
+		<script src="js/classie.js"></script>
+		<script>
+			var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+				showRightPush = document.getElementById( 'showRightPush' ),
+				body = document.body;
+
+			showRightPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toleft' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+				disableOther( 'showRightPush' );
+			};
+		</script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/cbpGridGallery.js"></script>
+		<script src="js/bookblock.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/bookshelf.js"></script>
+		<script>
+			new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+			new CBPGridGallery( document.getElementById( 'grid-gallery2' ) );
+			new CBPGridGallery( document.getElementById( 'grid-gallery3' ) );
+			new CBPGridGallery( document.getElementById( 'grid-gallery4' ) );
+			new CBPGridGallery( document.getElementById( 'grid-gallery5' ) );
+			new CBPGridGallery( document.getElementById( 'grid-gallery6' ) );
+		</script>
+	</body>
+</html>

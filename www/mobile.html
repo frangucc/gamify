@@ -6,6 +6,8 @@
     
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <title></title>
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
@@ -23,6 +25,7 @@
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
+
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
@@ -32,6 +35,10 @@
     <script src='https://cdn.firebase.com/js/simple-login/1.4.1/firebase-simple-login.js'></script>
     <script src="lib/firebase/angularfire.js"></script>
     <script src="bower_components/jquery/jquery.js"></script>
+          <!-- userapp javascript sdks -->
+    <script src="lib/userapp/userapp.client.js"></script>
+    <script src="lib/userapp/angularjs.userapp.js"></script>
+    <script src="lib/userapp/phonegap.userapp.js"></script>
 
     <!-- your app's js -->
     <script src="scripts/app-m.js"></script>
@@ -43,7 +50,7 @@
     <script src="js/custom.js"></script>
   </head>
 
-  <body ng-app="starter">
+  <body ng-app="starter" style="width:100% !important;">
     <div class="preloader">
        <div class="spinner">
           <div class="bounce1"></div>
@@ -58,7 +65,7 @@
     window.onresize=function(){
     if ( $(this).width() > 724 ) {
         
-          window.location.replace("/www/");
+          window.location.replace("/");
         }
       };
       /* $(window).load(function(){
@@ -66,6 +73,8 @@
             init();
         }); */
     </script>
+    <script type="text/javascript" charset="utf-8" src="js/logo_edgePreload.js"></script>
+<style>.edgeLoad-EDGE-86398690 { visibility:hidden; }</style>
     <form action="server.cgi" method="post" enctype="multipart/form-data">
   <input type="file" name="video" accept="video/*" capture>
   <input type="submit" value="Upload">

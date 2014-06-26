@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Pricing | UserApp + Stripe Demo</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Demonstration of how to use UserApp and Stripe to create pricing with sign-up." />
+
+	<!-- Fonts and CSS -->
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link href="css/animate.min.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+
+	<!-- jQuery -->
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<!-- UserApp JavaScript -->
+	<script src="js/config.js"></script>
+	<script src="https://app.userapp.io/js/userapp.client.js"></script>
+	<script>
+		/* 
+		 * Initialize UserApp with your App Id and an API token
+		 * Set these values in js/config.js
+		 */
+		UserApp.initialize({ appId: USERAPP_APP_ID, token: USERAPP_TOKEN });
+
+		// Get the plans
+		UserApp.Plan.search({
+		    price_list_id: USERAPP_PRICE_LIST_ID,
+		    fields: ['plan_id', 'name', 'price', 'billing_period', 'features', 'properties']
+		}, function(error, result) {
+			if (!error) {
+				var plans = result.items;
+
+				if (plans.length > 0) {
+					// Sort the plans by price
+					plans.sort(function(a, b) {
+						return ((a.price < b.price) ? -1 : ((a.price > b.price) ? 1 : 0));
+					});
+
+					// Render the pricing table
+					$('#price-table').html(renderPricingTable(result.items));
+				} else {
+					// Missing plans
+					$('#price-table').hide();
+					$('#error-missing-plans').show();
+				}
+			} else {
+				// An error occured
+				$('#price-table').hide();
+				$('#error-' + error.name.toLowerCase().replace(/_/g, '-')).show();
+			}
+		});
+
+		// Render pricing table
+		function renderPricingTable(plans) {
+			var ul = $('<ul>').addClass('pricing');
+
+			for (var i = 0; i < plans.length; ++i) {
+				var plan = plans[i];
+
+				var li = $('<li>')
+					// The header
+					.append($('<div>').addClass('pricing-header')
+						.append($('<h3>').text(plan.name))
+						.append((function() {
+							// Price
+							var price = $('<div>').addClass('pricing-price');
+
+							if (plan.price && plan.price > 0) {
+								price
+									.append($('<sub>').text('$'))
+									.append($('<strong>').text(plan.price));
+
+								// Billing period
+								if (plan.billing_period == 'annually') {
+									price.append($('<span>').text('/year'));
+								} else {
+									price.append($('<span>').text('/month'));
+								}
+							} else {
+								price.append($('<strong>').addClass('free').text('Free'));
+							}
+
+							return price;
+						})())
+					)
+					// Feature list
+					.append($('<div>').addClass('pricing-body')
+						.append((function() {
+							var ul = $('<ul>');
+							for (var feature in plan.features) {
+								var li = $('<li>');
+								if (plan.features[feature].value) {
+									li.append($('<i>').addClass('fa fa-check'));
+								} else {
+									li.append($('<i>').addClass('fa fa-times'));
+									li.addClass('disabled');
+								}
+								li.append($('<span>').text(feature));
+								ul.append(li);
+							}
+							return ul;
+						})())
+					)
+					// Property list
+					.append($('<div>').addClass('pricing-body')
+						.append((function() {
+							var ul = $('<ul>');
+							for (var property in plan.properties) {
+								var li = $('<li>');
+								li.append($('<i>').addClass('fa fa-star-o'));
+								li.append($('<span>').text(property + ': ' + plan.properties[property].value));
+								ul.append(li);
+							}
+							return ul;
+						})())
+					)
+					// The footer
+					.append($('<div>').addClass('pricing-footer')
+						.append($('<a>').attr('href', 'signup.html?price_list_id='+USERAPP_PRICE_LIST_ID+'&plan_id='+plan.plan_id).addClass('btn btn-info').text('Sign Up'))
+					);
+
+				// Add this plan to the list
+				ul.append(li);
+			}
+
+			return ul;
+		}
+	</script>
+</head>
+<body style="background-image:url(img/gamify/bg-green.jpg);margin:-30px 0px 0;background-size:cover;">
+	<div class="container">
+		<div class="row">
+			<a href="mobile.html#/app/jobs"><img src="img/gamify/ball-mini.png" /></a>
+			<h1 style="color:#fff;margin-top:20px;">Gamify Pricing</h2>
+			<p style="color:#fff;">
+				Don't be a cheap skate, buy your kids a plan. 
+			</p>
+		</div>
+		<div id="price-table" class="row">
+			<img src="img/ajax-loader.gif" style="padding: 100px;">
+		</div>
+		<div id="error-invalid-argument-app-id" class="row error" style="display: none;">
+			<div class="alert">
+				<div>Invalid App Id. Please replace <code>YOUR_APP_ID</code> in <code>js/config.js</code> with your own App Id.</div>
+				<div><a href="http://help.userapp.io/customer/portal/articles/1322336-how-do-i-find-my-app-id-" target="_blank">How to find your App Id...</a></div>
+			</div>
+		</div>
+		<div id="error-invalid-credentials" class="row error" style="display: none;">
+			<div class="alert">
+				<div>Invalid token. Please replace <code>YOUR_TOKEN</code> in <code>js/config.js</code> with a token with permissions set to <code>plan.search</code>.</div>
+				<div><a href="http://help.userapp.io/customer/portal/articles/1364103-how-do-i-create-an-api-token-" target="_blank">How to create an API token...</a></div>
+			</div>
+		</div>
+		
+		<div id="error-missing-plans" class="row error" style="display: none;">
+			<div class="alert">
+				<div>This price list doesn't have any plans.</div>
+				<div><a href="https://app.userapp.io/#/price-lists/" target="_blank">Click here to create a new plan.</a></div>
+			</div>
+		</div>
+		
+	</div>
+
+<script type="text/javascript">
+  _cio.identify({
+    // Required attributes
+    id: 'prod_287',           // Unique id for the currently signed in user in your application.
+    email: 'user@domain.com', // Email of the currently signed in user.
+    created_at: 1339438758,   // Timestamp in your system that represents when
+                              // the user first signed up. You'll want to send it
+                              // as seconds since the epoch.
+
+    // Optional (these are examples. You can name attributes what you wish)
+
+    first_name: 'John',       // Add any attributes you'd like to use in the email subject or body.
+    plan_name: 'premium'      // To use the example segments, set this to 'free' or 'premium'.
+  });
+</script>
+
+	<script type="text/javascript">
+  var _cio = _cio || [];
+  (function() {
+    var a,b,c;a=function(f){return function(){_cio.push([f].
+    concat(Array.prototype.slice.call(arguments,0)))}};b=["load","identify",
+    "sidentify","track","page"];for(c=0;c<b.length;c++){_cio[b[c]]=a(b[c])};
+    var t = document.createElement('script'),
+        s = document.getElementsByTagName('script')[0];
+    t.async = true;
+    t.id    = 'cio-tracker';
+    t.setAttribute('data-site-id', 'cf5cccbe7ef1fb497fee');
+    t.src = 'https://assets.customer.io/assets/track.js';
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+<script type="text/javascript">
+  var trak=trak||[];trak.io=trak.io||{};trak.io.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d29p64779x43zo.cloudfront.net/v1/trak.io.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);var r=function(e){return function(){trak.push([e].concat(Array.prototype.slice.call(arguments,0)))}},i=["initialize","identify","track","alias","channel","source","host","protocol","page_view"];for(var s=0;s<i.length;s++) trak.io[i[s]]=r(i[s]);trak.io.initialize.apply(trak.io,arguments)};
+  trak.io.load('f9837fcf7f57d30501878e1b4e4163284399adb9', { automagic: true });
+</script>
+<style>
+	#price-table {
+		text-align: center !important;
+	}
+	.pricing {
+		width:600px !important;
+		position:relative;
+		left:20px;
+	}
+	.pricing li {
+		width:400px !important;
+	}
+	.pricing-body ul li {
+		width:250px !important;
+	}
+	</style>
+</body>
+</html>

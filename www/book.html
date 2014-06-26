@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Blueprint: Nested Accordion</title>
+		<meta name="description" content="Blueprint: Nested Accordion" />
+		<meta name="keywords" content="nested, accordion, simple, vertical, web development, css3, javascript" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/accord_default.css" />
+		<link rel="stylesheet" type="text/css" href="css/accord_component.css" />
+				<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/push_default.css" />
+		<link rel="stylesheet" type="text/css" href="css/push_component.css" />
+				<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/book_demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+		<link rel="stylesheet" type="text/css" href="css/book_component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body class="cbp-spmenu-push" style="background-color:#282828;background-image:url('http://cl.ly/W5Mj/bg.jpg');background-size:cover;">
+		
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+			<h3>My Sanbox</h3>
+			<a href="/www/blog.html">Gamify</a>
+			<a href="/www/sandbox/ticketbar/public/">TicketBar.io</a>
+			<a href="https://gist.github.com/frangucc/8014d3eddd0abe406fff" target="_blank">#UP!</a>
+			<a href="#">UX Stuff</a>
+			<a href="#">Ionic</a>
+			<a href="#">Famo.us</a>
+			<a href="#">Ten Page Books</a>
+			<a href="#">Twillio</a>
+			<a href="#">Chatyeo</a>
+		</nav>
+		
+		<nav style="position:absolute;right:40px;top:45px;">
+					<a style="cursor:pointer;color:#ff2e63;" class="icon-arrow-left" id="showRightPush" data-info="my sandbox"> sandbox</a>
+				</nav>
+		
+		<div id="scroll-wrap" class="container">
+			<header class="clearfix">
+				<span><a href="/www/blog.html" style="color:#ff2e63;">FRANCKE JONES, circa 1999</a></span>
+				
+			<div class="booktext">Please read one of my essays</div> 
+			</header>
+			<div class="main">
+					<div id="bookshelf" class="bookshelf">
+							
+							<figure>
+								<div class="book" data-book="book-1"></div>
+								<div class="buttons"><a href="#"></a></div>
+								<div class="details">
+									<ul>
+										<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</li>
+										<li>Graham Press</li>
+										<li>12.09.2010</li>
+										<li>397 pages</li>
+									</ul>
+								</div>
+							</figure>
+							
+						</div>
+		
+
+				<!-- Fullscreen BookBlock -->
+				<!-- for demo purpose we repeat each bookblock -->
+				<div class="bb-custom-wrapper" id="book-1">
+											<div class="bb-bookblock">
+												<div class="bb-item">
+													<div class="bb-custom-side page-layout-3">
+														<div style="margin-top:200px;">
+															
+															<div style="font-size:28px;line-height:51px;">"This booklet is to help decision makers analyze the question of Hybrid over Native." ~ Francke Jones</div>
+														</div>
+													</div>
+													<div class="bb-custom-side page-layout-3">
+														<img src="img/port2.jpg" style="width:95%;" />
+														<p class="francke-font"><strong style="font-size:26px;">Let's not fight</strong><br /><br />
+Right now, at this very moment, pairs of devs everywhere are having heated debates on Native versus Hybrid. For a decision with such large consequences, they may be rightfully so. The argument goes something like this… <br /><br />
+
+“Hybrid apps do not perform like native apps, they are jenky, jittery, slow and so forth. Native code gives you greater flexibility - they are faster, have better local storage and so forth.” <br /><br />
+
+The hybrid evangelist argues back, “you don’t need that much speed and you’re not making a video game for cripes sake, you’re making a simple app. I can have your app done faster and on every platform, including mobile web and web, all at once, all one codebase.”</p>
+													</div>
+												</div>
+												<div class="bb-item">
+													<div class="bb-custom-side page-layout-1">
+														<h3>
+															Ten Pages On <span>Native vs. Hybrid</span>
+														</h3>
+													</div>
+													<div class="bb-custom-side page-layout-1">
+														<p style="font-size:22px;width:95%;">Some people may be asking why only compare Hybrid versus Native, why not compare HTML5 and Mobile Web as well? I only compare the two because with modern Hybrid frameworks, you get mobile web as a byproduct of the hybrid app. And since HTML5 is used to make hybrid apps, it's a moot point to argue anything other than Hybrid or Native. In my opinion, Hybrid should be cross-platform out of the box - or at least that's how my Hybrid apps work today. Later in this book, I'll share my Hybrid starter projects.<br /><br />
+														<img src="img/portrait.jpg" style="width:95%;" /></p>
+													</div>
+												</div>
+												<div class="bb-item">
+													<div class="bb-custom-side page-layout-3">
+														<p class="francke-font">Before we go any further, I have a couple questions for the two devs:<br /><br />
+
+Which one of you can build me my MVP faster? If both answer: in about the same amount of time, 4-5 weeks, they’re probably about right (assuming for the sake of argument, the devs are decent).
+<br /><br />
+Will your users even care or notice your app isn’t native? Is your app more sophisticated than the BBC? What will a native app be able to do that your hybrid app won’t?
+<br /><br />
+Does launching your product cross platform give you important data you’ll need to prove concept? For example, if I show up to a soccer field to promote my soccer app and only 2 out of 10 subscribe and convert because I’m only available on iOS, would saying that 6 out of 10 convert be better?<br /><br /></p>
+													</div>
+													<div class="bb-custom-side page-layout-3">
+														
+														<p class="francke-font">
+If you’ve answered my four questions in the following way: same, no and yes, then hybrid has just gained some new popularity. Also, it’s not necessarily an either or scenario. At my last company, we launched hybrid first while we concurrently kicked off native iOS and Android projects on the side. I have friends in opposite situations where they don’t have access to an iOS or Android developer and are doing Hybrid out of necessity.</p>
+													</div>
+												</div>
+											</div>
+											<nav>
+												<a href="#" class="bb-nav-prev">Previous</a>
+												<a href="#" class="bb-nav-next">Next</a>
+												<a href="#" class="bb-nav-close">Close</a>
+											</nav>
+										
+									</div>
+			<div class="bb-custom-wrapper" id="book-2">
+					<div class="bb-bookblock">
+						<div class="bb-item">
+							<div class="bb-custom-side page-layout-3">
+								<div>
+									<h3>Portraits</h3>
+									<p>Photography (1999 &ndash; 2013)</p>
+								</div>
+							</div>
+							<div class="bb-custom-side page-layout-3">
+							</div>
+						</div>
+						<div class="bb-item">
+							<div class="bb-custom-side page-layout-1">
+								<h3>
+									Chapter 9 <span>Nomadic Lifestyle</span>
+								</h3>
+							</div>
+							<div class="bb-custom-side page-layout-1">
+								<p>Candy canes lollipop macaroon marshmallow gummi bears tiramisu. Dessert croissant cupcake candy canes. Bear claw faworki faworki lemon drops. Faworki marzipan sugar plum jelly-o marzipan cookie.</p>
+							</div>
+						</div>
+						<div class="bb-item">
+							<div class="bb-custom-side page-layout-2">
+								<div>
+									<h3>Aa</h3>
+									<p>Faworki marzipan sugar plum jelly-o marzipan. Soufflé tootsie roll jelly beans. Sweet icing croissant dessert bear claw. Brownie dessert cheesecake danish jelly pudding bear claw soufflé.</p>
+								</div>
+								<div>
+									<h3>Bb</h3>
+									<p>Faworki marzipan sugar plum jelly-o marzipan. Soufflé tootsie roll jelly beans. Sweet icing croissant dessert bear claw. Brownie dessert cheesecake danish jelly pudding bear claw soufflé.</p>
+								</div>
+							</div>
+							<div class="bb-custom-side page-layout-2">
+								<div>
+									<h3>Cc</h3>
+									<p>Faworki marzipan sugar plum jelly-o marzipan. Soufflé tootsie roll jelly beans. Sweet icing croissant dessert bear claw. Brownie dessert cheesecake danish jelly pudding bear claw soufflé.</p>
+								</div>
+								<div>
+									<h3>Dd</h3>
+									<p>Faworki marzipan sugar plum jelly-o marzipan. Soufflé tootsie roll jelly beans. Sweet icing croissant dessert bear claw. Brownie dessert cheesecake danish jelly pudding bear claw soufflé.</p>
+								</div>
+							</div>
+						</div>
+					</div><!-- /bb-bookblock -->
+					<nav>
+						<a href="#" class="bb-nav-prev">Previous</a>
+						<a href="#" class="bb-nav-next">Next</a>
+						<a href="#" class="bb-nav-close">Close</a>
+					</nav>
+				</div><!-- /bb-custom-wrapper -->
+			</div>
+		</div><!-- /bb-custom-wrapper -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquery.cbpNTAccordion.min.js"></script>
+		<script>
+			$( function() {
+				/*
+				- how to call the plugin:
+				$( selector ).cbpNTAccordion( [options] );
+				- destroy:
+				$( selector ).cbpNTAccordion( 'destroy' );
+				*/
+
+				$( '#cbp-ntaccordion' ).cbpNTAccordion();
+				
+
+			} );
+			
+			$( ".cbp-nttrigger" ).click(function() {
+			  $( ".hometext" ).hide();
+			});
+
+		</script>
+		<script src="js/classie.js"></script>
+		<script>
+			var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+				showRightPush = document.getElementById( 'showRightPush' ),
+				body = document.body;
+
+			showRightPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toleft' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+				disableOther( 'showRightPush' );
+			};
+		</script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/cbpGridGallery.js"></script>
+		<script src="js/bookblock.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/bookshelf.js"></script>
+		<script>
+			new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+			new CBPGridGallery( document.getElementById( 'grid-gallery2' ) );
+			new CBPGridGallery( document.getElementById( 'grid-gallery3' ) );
+			new CBPGridGallery( document.getElementById( 'grid-gallery4' ) );
+			new CBPGridGallery( document.getElementById( 'grid-gallery5' ) );
+			new CBPGridGallery( document.getElementById( 'grid-gallery6' ) );
+		</script>
+	</body>
+</html>

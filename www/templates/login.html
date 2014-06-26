@@ -1,0 +1,50 @@
+
+
+
+<ion-view title="Sign In" hide-back-button="true">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left"class="button button-icon ion-navicon-round"></button>
+    </ion-nav-buttons>
+    <ion-content class="has-header">
+    <div class="padding">
+        <form ua-login>
+
+      <div class="list list-inset">
+        <label class="item item-input">
+          <span class="input-label">Email</span>
+          <input type="text" name="login">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" name="password">
+        </label>
+      </div>
+      <div class="padding">
+        <button type="submit" class="button button-block button-positive">
+          <span ng-show="!loading">Log In</span>
+          <i ng-show="loading" class="ion-loading-b"></i>
+        </button>
+        <!--p class="text-center">
+          <a href="#/forgot-password">Forgot password?</a>
+        </p-->
+        <p class="text-center">
+          <a href="#/signup">Sign Up</a>
+        </p>
+      </div>
+
+  <div class="bar bar-footer bar-assertive" ng-show="error">
+    <div class="title">{{ error.message }}</div>
+  </div>
+</form>
+</div>
+
+
+
+        <hr />
+        <div class="padding">
+            <a class="button button-block button-positive" href="#/app/signup" >Sign up</a>
+            <a class="button button-block" href="#/app/playlists" >Go back to playlists</a>
+        </div>
+
+    </ion-content>
+</ion-view>

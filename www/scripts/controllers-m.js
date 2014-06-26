@@ -71,42 +71,8 @@ angular.module('starter.controllers', [])
     });
 })
 
-.controller('LoginCtrl', function ($scope, $location, $ionicPopup, $ionicLoading, LoginService) {
+
+.controller('LoginCtrl', function($scope, $location, $stateParams) {
     $scope.userDetails = {};
+})
 
-    $scope.performLogin = function () {
-        $ionicLoading.show({
-            template: 'signing in...'
-        });
-        LoginService.loginWithEmail($scope.userDetails.email, $scope.userDetails.password).then(function () {
-            if($scope.loginObj.user !== null) {
-                $location.path('/app/messages');
-            } else {
-                var error = $scope.loginError;
-                switch(error.code) {
-                    case 'INVALID_EMAIL':
-                    case 'INVALID_PASSWORD':
-                    default:
-                        $ionicPopup.alert({
-                            title: 'Login error.',
-                            template: 'Failed to login email or password was incorrect.'
-                        });
-                }
-            }
-            $ionicLoading.hide();
-        });
-    };
-
-    $scope.performLoginGit = function () {
-        LoginService.loginWithGitHub().then(function () {
-            console.log($scope.loginObj.user);
-        });
-    }
-
-    $scope.showInvalid = function () {
-        $ionicPopup.alert({
-            title: 'Invalid login.',
-            template: 'Invalid email or password, please try again.'
-        });
-    };
-});

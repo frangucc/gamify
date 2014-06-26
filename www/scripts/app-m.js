@@ -3,7 +3,23 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'firebase', 'starter.controllers', 'starter.services', 'starter.directives', 'starter.filters', 'starter.config'])
+
+angular.module('starter', ['ionic', 'UserApp', 'firebase', 'starter.controllers', 'starter.services', 'starter.directives', 'starter.filters', 'starter.config'])
+
+
+.run(function($ionicPlatform, user) {
+  // Initiate the user service with your UserApp App Id
+  // https://help.userapp.io/customer/portal/articles/1322336-how-do-i-find-my-app-id-
+  user.init({ appId: '5392677a81696' });
+
+  $ionicPlatform.ready(function() {
+    if(window.StatusBar) {
+      // org.apache.cordova.statusbar required
+      StatusBar.styleDefault();
+    }
+  });
+})
+
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -20,15 +36,18 @@ angular.module('starter', ['ionic', 'firebase', 'starter.controllers', 'starter.
     .state('app', {
       url: "/app",
       abstract: true,
-      templateUrl: "/www/templates/menu.html",
-      controller: 'AppCtrl'
+      templateUrl: "/templates/menu.html",
+      controller: 'AppCtrl',
+      data: {
+        public: true
+      }
     })
 
     .state('app.search', {
       url: "/search",
       views: {
         'menuContent' :{
-          templateUrl: "/www/templates/search.html"
+          templateUrl: "/templates/search.html"
         }
       }
     })
@@ -36,7 +55,7 @@ angular.module('starter', ['ionic', 'firebase', 'starter.controllers', 'starter.
       url: "/team",
       views: {
         'menuContent' :{
-          templateUrl: "/www/templates/team.html"
+          templateUrl: "/templates/team.html"
         }
       }
     })
@@ -44,7 +63,7 @@ angular.module('starter', ['ionic', 'firebase', 'starter.controllers', 'starter.
       url: "/tasker",
       views: {
         'menuContent' :{
-          templateUrl: "/www/templates/tasker.html"
+          templateUrl: "/templates/tasker.html"
         }
       }
     })
@@ -52,7 +71,7 @@ angular.module('starter', ['ionic', 'firebase', 'starter.controllers', 'starter.
       url: "/jobs",
       views: {
         'menuContent' :{
-          templateUrl: "/www/templates/jobs.html"
+          templateUrl: "/templates/jobs.html"
         }
       }
     })
@@ -61,7 +80,7 @@ angular.module('starter', ['ionic', 'firebase', 'starter.controllers', 'starter.
       url: "/messages",
       views: {
         'menuContent' :{
-          templateUrl: "/www/templates/messages.html",
+          templateUrl: "/templates/messages.html",
           controller: "MessagesCtrl"
         }
       }
@@ -79,34 +98,59 @@ angular.module('starter', ['ionic', 'firebase', 'starter.controllers', 'starter.
       url: "/about",
       views: {
           'menuContent' :{
-              templateUrl: "/www/templates/about.html"
+              templateUrl: "/templates/about.html"
               //controller: 'AboutCtrl'
           }
       }
     })
-    .state('app.signin', {
-      url: "/signin",
+    // the login with facebook route
+    .state('app.login-facebook', {
+      url: '/login-facebook',
       views: {
-          'menuContent' :{
-              templateUrl: "/www/templates/signin.html",
-              controller: 'LoginCtrl'
-          }
+        'menuContent' : {
+          templateUrl: "/templates/signin.html",
+          controller: 'LoginCtrl'
+        }
+      },
+      data: {
+        login: true
       }
     })
-    .state('app.signup', {
-        url: "/signup",
-        views: {
-          'menuContent' :{
-              templateUrl: "/www/templates/signup.html"
-              //controller: 'AboutCtrl'
-          }
+
+
+    // the login route
+    .state('app.login', {
+      url: '/login',
+      views: {
+        'menuContent' : {
+          templateUrl: 'templates/login.html',
+          controller: 'LoginCtrl'
         }
+      },
+      data: {
+        public: true
+      }
     })
+
+    // the signup route
+    .state('app.signup', {
+      url: '/signup',
+      views: {
+        'menuContent' : {
+          templateUrl: 'templates/signup.html',
+          controller: 'LoginCtrl'
+        }
+      },
+      data: {
+        public: true
+      }
+    })
+
     .state('app.single', {
       url: "/playlists/:playlistId",
       views: {
         'menuContent' :{
-          templateUrl: "/www/templates/playlist.html",
+          templateUrl: "/templates/playlist.html",
           controller: 'PlaylistCtrl'
         }
       }
