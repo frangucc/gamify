@@ -1,0 +1,67 @@
+<ion-view title='<img src="img/logo-header.png" class="logo-header">'  hide-back-button="true">
+  <!-- <ion-nav-buttons side="right">
+    <button menu-toggle="right" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons> -->
+
+  <!-- search input -->
+
+  <div class="bar bar-subheader item-input-inset search-input-container">
+    <label class="item-input-wrapper">
+      <div class="search-icon-wrapper">
+        <i class="icon ion-search placeholder-icon custom-search-icon"></i>
+      </div>
+      <input class="js-searchField"
+        ng-class="{'isLoading': isLoading}"
+        type="search"
+        placeholder="Find your local council"
+        ng-model="search.council.name"
+        ng-change="searchByString()">
+    </label>
+    <button class="button button-small button-energized" ng-if="search.council.name != ''" ng-click="clearSearchField()">
+      Cancel
+    </button>
+  </div>
+
+  <ion-content class="has-subheader has-custom-footer">
+    <ion-list>
+      <a class="item item-avatar" ng-repeat="council in councils | filter:search.council.name" href="" ng-click="saveCouncil(council)">
+        <img ng-src="{{council.logoUrl}}">
+        <h2>{{council.name}}</h2>
+      </a>
+    </ion-list>
+  </ion-content>
+  <div class="bar bar-footer bar-light standard-configs">
+
+    <div class="card">
+      <div class="item item-divider">
+        Or select your bin configuration
+      </div>
+      <div class="item no-padding">
+        <div class="row no-padding">
+          <div class="col col-50 config multi-stream-plus-green-bin">
+            <a href="" ng-click="saveStandardConfig(0, $event)">
+              <img src="img/bin-configurations/configuration-1.png">
+            </a>
+          </div>
+          <div class="col col-50 config multi-stream-no-green-bin">
+            <a href="" ng-click="saveStandardConfig(1, $event)">
+              <img src="img/bin-configurations/configuration-3.png">
+            </a>
+          </div>
+        </div>
+        <div class="row no-padding">
+          <div class="col col-50 config commingled-no-green-bin">
+            <a href="" ng-click="saveStandardConfig(2, $event)">
+              <img src="img/bin-configurations/configuration-2.png">
+            </a>
+          </div>
+          <div class="col col-50 config commingled-plus-green-bin">
+            <a href="" ng-click="saveStandardConfig(3, $event)">
+              <img src="img/bin-configurations/configuration-4.png">
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+</ion-view>

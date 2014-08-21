@@ -1,0 +1,279 @@
+/* Empty. Add your own CSS if you like */
+
+.landing-page-card {
+  text-align: center;
+}
+
+.logo-landing-page {
+  display: block;
+  width: 128px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.item-text-wrap {
+  text-align: center;
+}
+
+.categoriesContainer {
+  margin-top: 0;
+  /*border: 3px solid #626262;*/
+}
+
+.row.categories {
+  padding: 0;
+  border-bottom: 3px solid #626262;
+  /*height: 25%;*/
+}
+
+.row.categories.last-row {
+  border-bottom: none;
+}
+
+.row + .row {
+  margin-top: 0;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.category {
+  background-color: #ffffff;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  padding: 0;
+  font-size: 0.9em;
+  line-height: 13px;
+  border-right: 3px solid #626262;
+}
+
+.vertical-align-container {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.vertical-align-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.category.last {
+  border: none;
+}
+
+.category-icon {
+  width: 65px;
+  height: 65px;
+  display: inline-block;
+  background-size: 65px;
+}
+
+.platform-ipad .category-icon {
+  width: 130px;
+  height: 130px;
+  background-size: 130px;
+}
+
+.material-icon {
+  max-height: 100%;
+}
+
+/* Fading animation */
+
+.item-animate {
+    opacity: 1;
+ }
+
+.item-animate.ng-hide-add,
+.item-animate.ng-hide-remove {
+  display: block !important;
+  opacity: 0;
+}
+
+.item-animate.ng-hide-add {
+  -webkit-animation: 0.5s hide;
+  animation: 0.5s hide;
+}
+
+@keyframes hide {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@-webkit-keyframes hide {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.item-animate.ng-hide-remove {
+  -webkit-animation: 0.5s show;
+  animation: 0.5s show;
+}
+
+@keyframes show {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@-webkit-keyframes show {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/*Show spinner in search input during loading*/
+.js-searchField.isLoading {
+  background: url('http://www.hsi.com.hk/HSI-Net/pages/images/en/share/ajax-loader.gif') no-repeat 97% center !important;
+}
+
+img.logo-header {
+  margin-top: 9px;
+  height: 28px;
+}
+
+/*Style search field*/
+.search-input-container {
+  background-color: #54a0d4;
+  padding: 5px;
+  height: 50px;
+}
+
+.item-input-wrapper {
+  background-color: #fff;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 3px;
+}
+
+.search-icon-wrapper {
+  background-color: #e97a24;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 33px;
+  height: 30px;
+  text-align: center;
+}
+
+.custom-search-icon {
+  font-size: 22px;
+  /*background-color: #e97a24;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;*/
+  color: #fff;
+  /*width: 33px;
+  height: 30px;
+  text-align: center;*/
+}
+
+.button.button-energized {
+  background-color: #e97a24;
+}
+
+.has-subheader {
+  top: 94px;
+}
+
+.placeholder-icon:first-child {
+  padding: 0;
+}
+
+/* Footer with standard configurations */
+
+.standard-configs {
+  height: 200px;
+  display: block;
+  padding: 0;
+}
+
+.standard-configs .card {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.has-custom-footer {
+  bottom: 150px;
+}
+
+.config.multi-stream-plus-green-bin {
+  border-right: 1px solid #626262;
+  border-bottom: 1px solid #626262;
+}
+
+.config.commingled-no-green-bin {
+  border-left: 1px solid #626262;
+  border-bottom: 1px solid #626262;
+}
+
+.config.multi-stream-no-green-bin {
+  border-right: 1px solid #626262;
+  border-top: 1px solid #626262;
+}
+
+.config.commingled-plus-green-bin {
+  border-left: 1px solid #626262;
+  border-top: 1px solid #626262;
+}
+
+.config {
+  height: 81px;
+}
+
+.config a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.config img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Item view style */
+.bar-rs-blue {
+  background-color: #54a0d4;
+}
+
+.bar-rs-blue h2 {
+  color: white;
+}
+
+.correct-bin-card {
+  margin: 0 5px 5px;
+}
+
+.correct-bin-img {
+  height: 60px;
+}
+
+.correct-bin-text {
+  line-height: 60px;
+  font-size: 1.2em;
+}
+
+/* Item image */
+
+.item-image {
+  position: relative;
+  padding-bottom: 92.25%; /* square */
+  padding-top: 25px;
+  height: 0;
+  background-size: cover;
+  background-position: 50%;
+}
+
+/* iPad in portrait */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+}

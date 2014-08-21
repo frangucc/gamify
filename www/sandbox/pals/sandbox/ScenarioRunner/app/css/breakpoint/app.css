@@ -1,0 +1,114 @@
+/* x-lg */
+@media (min-width: 1200px) {
+
+    .nav li span.nav-name {float:right;}
+    .product-view-default .fa.empty {text-align: left;}
+    .cat-image {overflow: hidden;}
+    .branding-view h3 {line-height: 4em;}
+    .navbar-nav > li.admin{display:none;}
+
+}
+
+
+/* x-md */
+@media (min-width: 980px) and (max-width: 1199px) {
+
+    .nav li span.nav-name {float:right;}
+    .nav li span.hidden-sm {float:right;}
+    .product-view-default .fa.empty {text-align: left;}
+    .shortproduct-view:hover .shortproduct-name {display: block; cursor: default;}
+    .shortproduct-view:hover .shortproduct-toggle {display: none;}
+    .branding-view h3 {line-height: 4em;}
+    .navbar-nav > li.admin{display:none;}
+
+
+}
+
+/* x-sm */
+@media (min-width:768px) and (max-width: 979px) {
+
+
+    .branding-view {text-align: center;}
+    .branding-view-logo {float: none; margin: 0 auto 10px; max-height: 75px; }
+    .shortproduct-view:hover .shortproduct-name {display: block; cursor: default;}
+    .shortproduct-view:hover .shortproduct-toggle {display: none;}
+    .cart-view-btn-cancel  {float: left !important;}
+    .cart-view-btn-save {float: right !important;}
+
+    .gift-card-redemption-view .form-group {width: 100%;}
+    input, textarea, select, button {min-height: 45px;}
+    .view-form-icon  i {
+        top: 15px;
+    }
+    .navbar-nav > li.admin-dd,
+    .navbar-nav > li.favorites,
+    .text-nav{display:none;}
+
+}
+
+
+/* x-xs */
+@media (max-width: 767px) {
+    textarea, select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    textarea, select {
+        border: 1px solid #555;
+        padding: 0.5em;
+        font-size: 15px;
+        line-height: 1.2em;
+        width: 80%;
+        background: #fff;
+        -webkit-appearance: none;
+        -webkit-box-shadow: 1px 1px 1px #fff;
+        -webkit-border-radius: 0.5em;
+
+        -moz-appearance: none;
+        -moz-appearance: 1px 1px 1px #fff;
+        -moz-appearance: 0.5em;
+
+        appearance: none;
+        appearance: 1px 1px 1px #fff;
+        appearance: 0.5em;
+
+    }
+    .view-order-last-count {width: 100%;}
+    .btn-group {width: 100%;}
+    .btn-group .btn {width: 100%;padding: 15px;margin: 2px;}
+    .current-cat-name {width: 215px;}
+    .navbar-collapse {padding: 0;}
+    /*.navbar-left li.products a {padding: 15px 20px 15px 10px;}*/
+    /*.navbar-right li.cart a {padding: 15px 10px 15px 15px;}*/
+    .cart-view-btn-continue {width: 100%;margin-top: 10px;}
+    .panel-footer .btn-group {width: 100%;}
+    .cart-view-line-items-btn-group .btn-group, .check-out-view-btn-group .btn-group {vertical-align: inherit; width: 100%;}
+    .cart-view-btn-cancel  {float: left !important;}
+    .cart-view-line-items-repeater div.col-xs-3 { text-align:center; }
+    .cart-view-btn-save {float: right !important;}
+    .ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {}
+    .branding-view {text-align: center;}
+    .branding-view-logo {float: none; margin: 0 auto 10px; max-height: 75px; }
+    .shortproduct-view:hover .shortproduct-name {display: block;}
+    .shortproduct-view:hover .shortproduct-toggle {display: none;}
+    .caption {margin: 5px;}
+    .credit-card-cvn-input{
+        padding-top:15px;
+    }
+    .col-collapse-m {padding: 0;}
+    .view-variant-list li {margin-bottom: 15px !important;}
+    .copyright-view {float: none; margin: 15px auto;}
+
+    input, textarea, select, button {min-height: 45px;}
+    .view-form-icon  i {
+    top: 15px;
+    }
+    .navbar-nav > li.admin-dd,
+    .navbar-nav > li.favorites,
+    .text-nav{display:none;}
+
+
+
+}

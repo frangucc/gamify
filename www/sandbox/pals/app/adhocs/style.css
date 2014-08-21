@@ -1,0 +1,1104 @@
+/* ==========================================================================
+   General
+   ========================================================================== */
+
+p {
+	
+
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size:20px !important;
+    font-weight: 300;
+    color: #272727 !important;
+    line-height:26px !important;
+
+}
+
+
+@font-face {
+    font-family: 'icon';
+    src:url('../fonts/icon.eot');
+    src:url('../fonts/icon.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/icon.woff') format('woff'),
+        url('../fonts/icon.ttf') format('truetype'),
+        url('../fonts/icon.svg#icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ==========================================================================
+   One Page Love
+   ========================================================================== */
+
+.opl {
+    position: fixed;
+    top: 35px;
+    right: 0px;
+    z-index: 9999;
+}
+
+.opl a {
+    width: 73px;
+    height: 56px;
+    text-indent: -9999px;
+    display: block;
+    background: url(../images/opl.png) no-repeat;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.but {
+    display: inline-block;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;   
+    font-weight: 600;
+    font-size: 1rem;
+    font-size: 20px;    
+    padding: 0 45px;
+    line-height: 55px;
+
+    background-color: #fff;
+
+    -webkit-border-radius: 45px;
+       -moz-border-radius: 45px;
+            border-radius: 45px;
+
+    -webkit-background-clip: padding-box;
+       -moz-background-clip: padding-box;
+            background-clip: padding-box;
+
+    color: #000;
+    border: 0;
+
+    -webkit-transition: background-color 0.3s ease;
+       -moz-transition: background-color 0.3s ease;
+         -o-transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease;
+}
+
+.off {
+    display: inline-block;
+    padding: 0 45px;
+    line-height: 55px;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: default;
+
+    -webkit-border-radius: 45px;
+       -moz-border-radius: 45px;
+            border-radius: 45px;
+
+    -webkit-background-clip: padding-box;
+       -moz-background-clip: padding-box;
+            background-clip: padding-box;
+
+    color: #fff;
+    border: 0;
+
+    -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+       -moz-transition: background-color 0.3s ease, color 0.3s ease;
+         -o-transition: background-color 0.3s ease, color 0.3s ease;
+            transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.but:hover,
+.but:active {
+    background-color: #eee;
+
+}
+
+
+.but2 {
+    display: inline-block;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;   
+    font-weight: 600;
+    font-size: 1rem;
+    font-size: 20px;    
+    padding: 0 45px;
+    line-height: 55px;
+
+    background-color: #0061a5;
+
+    -webkit-border-radius: 45px;
+       -moz-border-radius: 45px;
+            border-radius: 45px;
+
+    -webkit-background-clip: padding-box;
+       -moz-background-clip: padding-box;
+            background-clip: padding-box;
+
+    color: #fff;
+    border: 0;
+
+    -webkit-transition: background-color 0.3s ease;
+       -moz-transition: background-color 0.3s ease;
+         -o-transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease;
+}
+
+.off {
+    display: inline-block;
+    padding: 0 45px;
+    line-height: 55px;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: default;
+
+    -webkit-border-radius: 45px;
+       -moz-border-radius: 45px;
+            border-radius: 45px;
+
+    -webkit-background-clip: padding-box;
+       -moz-background-clip: padding-box;
+            background-clip: padding-box;
+
+    color: #fff;
+    border: 0;
+
+    -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+       -moz-transition: background-color 0.3s ease, color 0.3s ease;
+         -o-transition: background-color 0.3s ease, color 0.3s ease;
+            transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.but2:hover,
+.but2:active {
+    background-color: #0061a5;
+
+}
+
+
+.but3 {
+    display: inline-block;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;   
+    font-weight: 300;
+    font-size: 1rem;
+    font-size: 20px;    
+    padding: 0 45px;
+    line-height: 55px;
+
+    background-color: #cc0000;
+
+    -webkit-border-radius: 45px;
+       -moz-border-radius: 45px;
+            border-radius: 45px;
+
+    -webkit-background-clip: padding-box;
+       -moz-background-clip: padding-box;
+            background-clip: padding-box;
+
+    color: #fff;
+    border: 0;
+
+    -webkit-transition: background-color 0.3s ease;
+       -moz-transition: background-color 0.3s ease;
+         -o-transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease;
+}
+
+.off {
+    display: inline-block;
+    padding: 0 45px;
+    line-height: 55px;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: default;
+
+    -webkit-border-radius: 45px;
+       -moz-border-radius: 45px;
+            border-radius: 45px;
+
+    -webkit-background-clip: padding-box;
+       -moz-background-clip: padding-box;
+            background-clip: padding-box;
+
+    color: #fff;
+    border: 0;
+
+    -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+       -moz-transition: background-color 0.3s ease, color 0.3s ease;
+         -o-transition: background-color 0.3s ease, color 0.3s ease;
+            transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.but3:hover,
+.but3:active {
+    background-color: #cc0000;
+
+}
+
+/* ==========================================================================
+   All Sections
+   ========================================================================== */
+
+.footer p {
+    font-size: 1.125rem;
+    font-size: 18px;
+    line-height: 2.25rem;
+    line-height: 36px;
+    color: #b0b0b0;
+}
+
+/* ==========================================================================
+   Home
+   ========================================================================== */
+
+#home {
+    background-image: url(../images/burst.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+}
+#home2 {
+    
+    background-image: url(../images/pals_section.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+}
+#home img {
+    width:60%;
+}
+
+
+.home-title h1 {
+    font-family: 'Ovo', serif;
+    font-size: 4rem;
+    font-size: 44px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0px;
+    margin-bottom: 9px;
+    opacity: 1;
+  
+}
+.home-title img {
+	width:70%;
+    padding:0 0 0px 0;
+    top:-150px;
+    position:relative;
+}
+
+.home-title h2 {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 1.3125rem;
+    font-size:22px;
+    font-weight: 300;
+    color: #000;
+    line-height:30px;
+    margin-bottom: 45px;
+    text-align: center;
+    padding:20px 40px;
+ 
+}
+
+.home-tittle a {
+   
+}
+
+.home-title.jiji h1,
+.home-title.jiji h2,
+.home-title.jiji a {
+    opacity: 0;
+}
+
+/* ==========================================================================
+   About
+   ========================================================================== */
+
+#about {
+    background-color: #fff;
+    height:200px;
+    margin-top:-100px;
+}
+#pals {
+	background-color: #fff;
+    height:600px;
+    margin-top:40px;
+    text-align:center;
+}
+}
+
+.about-content a {
+}
+
+/* ==========================================================================
+   Services
+   ========================================================================== */
+
+/* ==========================================================================
+   Work
+   ========================================================================== */
+#pals {
+margin-top:90px;
+}
+
+#work {
+    background-color: #fff;
+    margin-top:-180px;
+}
+
+.work-examples {
+    margin-top: 90px;
+}
+
+.work-item {
+    max-height: 280px;
+    cursor: pointer;
+    margin-bottom: 24px;
+    position: relative;
+    cursor: default;
+    overflow: hidden;
+}
+
+.work-item img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+
+}
+
+.work-item-inside {
+    background-color: rgba(0, 0, 0, 1);
+    color: #fff;    
+    display: block;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+
+}
+
+.work-item-inside.visuallyshowed {
+    opacity: 1;
+    visibility: visible;
+}
+
+.work-item-inside h4 {
+    margin-bottom: 27px;
+    font-weight: 400;
+}
+.jokes {
+    padding:150px 0 0 0;
+}
+.jokes a {
+    font-size:22px;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    color:#fff;
+
+
+}
+.jokes h1 {
+    font-family: 'Ovo', serif;
+    font-size: 4rem;
+    font-size: 44px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0px;
+    margin-bottom: 9px;
+    opacity: 1;
+}
+.sticker {
+    position:absolute;
+    top:-100px;
+    z-index: 999999;
+    left:42.3%;
+    text-align: center;
+}
+
+/* ==========================================================================
+   Contact
+   ========================================================================== */
+
+/*.social [class^="icon-"],
+.social [class*=" icon-"] {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin: 0 18px;
+}*/
+
+.social [class^="icon-"],
+.social [class*=" icon-"] {
+    font-family: 'icon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 1.6875rem;
+    font-size: 27px;
+    line-height: 1rem;
+    line-height: 16px;
+    color: #F10061;
+    padding: 6px;
+    margin: 0 27px;
+
+    -webkit-transition: color 0.3s ease;
+       -moz-transition: color 0.3s ease;
+         -o-transition: color 0.3s ease;
+            transition: color 0.3s ease;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.social [class^="icon-"]:hover,
+.social [class*=" icon-"]:hover {
+    color: #F83E89;
+}
+
+.social {
+    margin-top: 90px;
+    cursor: default;
+}
+
+.icon-twitter:before {
+    content: "\e600";
+}
+
+.icon-linkedin:before {
+    content: "\e601";
+}
+
+.icon-instagram:before {
+    content: "\e602";
+}
+
+.icon-github:before {
+    content: "\e603";
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+#footer {
+    background-color: #000;
+    color: #fff;
+    font-size: 0.8125rem;
+    font-size: 13px;
+
+}
+
+.f1 {
+    text-align: center;
+}
+
+#footer p {
+    padding: 27px 0;
+    font-weight: 400;
+}
+
+#footer a {
+    color: #F10061;
+    -webkit-transition: color 0.3s ease;
+       -moz-transition: color 0.3s ease;
+         -o-transition: color 0.3s ease;
+            transition: color 0.3s ease;
+}
+
+#footer a:hover {
+    color: #F83E89;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+.col {
+    border:0px solid rgba(0,0,0,0);
+    float:left;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -moz-background-clip:padding-box !important;
+    -webkit-background-clip:padding-box !important;
+    background-clip:padding-box !important;
+}
+
+
+
+    /* 1. 12 Column Grid 0px - 319px 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    8.33333333333%
+    Span 2:    16.6666666667%
+    Span 3:    25.0%
+    Span 4:    33.3333333333%
+    Span 5:    41.6666666667%
+    Span 6:    50.0%
+    Span 7:    58.3333333333%
+    Span 8:    66.6666666667%
+    Span 9:    75.0%
+    Span 10:    83.3333333333%
+    Span 11:    91.6666666667%
+    Span 12:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 0px) and (max-width: 319px) {
+        
+        .row {
+            margin-left:-24px;
+        }
+        .col {
+            border-left-width:24px;
+            padding:0 0px;
+        }
+        
+
+        .menu-icon {
+            top: 27px;
+            left: 27px;
+        }
+        
+        .home-title h1 {
+            font-size: 1.6875rem;
+            font-size: 27px;
+        }
+
+        .home-title h2 {
+            font-size: 0.8125rem;
+            font-size: 13px;
+            letter-spacing: 3px;
+        }
+
+        #about .empty,
+        #work .empty,
+        #contact .empty {
+            display: none;
+        }
+
+        .about-title h3,
+        .work-title h3,
+        .contact-title h3,
+        .menu ul li a {
+            font-size: 1.3125rem;
+            font-size: 21px;
+        }
+
+        .services-content ul li {
+            font-size: 1rem;
+            font-size: 16px;
+            line-height: 1.875rem;
+            line-height: 30px;
+        }
+
+        .services-content ul {
+            margin-bottom: 60px;
+        }
+
+        .services-team ul {
+            margin-bottom: 0;
+        }
+
+        .social [class^="icon-"],
+        .social [class*=" icon-"] {
+            margin: 0 3px;
+        }    
+        
+        .span_1 {
+            width:8.33333333333%;
+        }
+        .span_2 {
+            width:16.6666666667%;
+        }
+        .span_3 {
+            width:25.0%;
+        }
+        .span_4 {
+            width:33.3333333333%;
+        }
+        .span_5 {
+            width:41.6666666667%;
+        }
+        .span_6 {
+            width:50.0%;
+        }
+        .span_7 {
+            width:58.3333333333%;
+        }
+        .span_8 {
+            width:66.6666666667%;
+        }
+        .span_9 {
+            width:75.0%;
+        }
+        .span_10 {
+            width:83.3333333333%;
+        }
+        .span_11 {
+            width:91.6666666667%;
+        }
+        .span_12,
+        .home-title,
+        .about-title,
+        .about-description,
+        .services-design,
+        .services-frontend,
+        .services-team,
+        .work-title,
+        .work-description,
+        .work-item,
+        .contact-title,
+        .contact-description,
+        .f1 {
+            margin-left:0;
+            width:100%;
+        }
+    }
+
+    /* 2. 12 Column Grid 320px - 459px 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    8.33333333333%
+    Span 2:    16.6666666667%
+    Span 3:    25.0%
+    Span 4:    33.3333333333%
+    Span 5:    41.6666666667%
+    Span 6:    50.0%
+    Span 7:    58.3333333333%
+    Span 8:    66.6666666667%
+    Span 9:    75.0%
+    Span 10:    83.3333333333%
+    Span 11:    91.6666666667%
+    Span 12:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 320px) and (max-width: 459px) {
+        
+        .row {
+            margin-left:-24px;
+        }
+        .col {
+            border-left-width:24px;
+            padding:0 0px;
+        }
+        
+
+        .opl {
+            top: 17px;
+        }
+
+        .menu-icon {
+            top: 27px;
+            left: 27px;
+        }
+
+        .menu ul {
+            padding-top: 80px;
+        }
+        
+        .menu ul li a {
+            padding: 9px 0 9px 27px;
+        }
+
+        .home-title h1 {
+            font-size: 1.6875rem;
+            font-size: 27px;
+        }
+
+        .home-title h2 {
+            font-size: 0.8125rem;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        .home-title img {
+			width:60%;
+		}
+
+        #about .empty,
+        #work .empty,
+        #contact .empty {
+            display: none;
+        }
+
+        .about-title h3,
+        .work-title h3,
+        .contact-title h3,
+        .menu ul li a {
+            font-size: 1.3125rem;
+            font-size: 21px;
+        }
+
+        .services-content ul li {
+            font-size: 1rem;
+            font-size: 16px;
+            line-height: 1.875rem;
+            line-height: 30px;
+        }
+
+        .services-content ul {
+            margin-bottom: 60px;
+        }
+
+        .services-team ul {
+            margin-bottom: 0;
+        }
+
+        .social [class^="icon-"],
+        .social [class*=" icon-"] {
+            margin: 0 3px;
+        }
+        
+        .span_1 {
+            width:8.33333333333%;
+        }
+        .span_2 {
+            width:16.6666666667%;
+        }
+        .span_3 {
+            width:25.0%;
+        }
+        .span_4 {
+            width:33.3333333333%;
+        }
+        .span_5 {
+            width:41.6666666667%;
+        }
+        .span_6 {
+            width:50.0%;
+        }
+        .span_7 {
+            width:58.3333333333%;
+        }
+        .span_8 {
+            width:66.6666666667%;
+        }
+        .span_9 {
+            width:75.0%;
+        }
+        .span_10 {
+            width:83.3333333333%;
+        }
+        .span_11 {
+            width:91.6666666667%;
+        }
+        .span_12,
+        .home-title,
+        .about-title,
+        .about-description,
+        .services-design,
+        .services-frontend,
+        .services-team,
+        .work-title,
+        .work-description,
+        .work-item,
+        .contact-title,
+        .contact-description,
+        .f1 {
+            margin-left:0;
+            width:100%;
+        }
+    }
+
+    /* 3. 12 Column Grid 460px - 779px 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    8.33333333333%
+    Span 2:    16.6666666667%
+    Span 3:    25.0%
+    Span 4:    33.3333333333%
+    Span 5:    41.6666666667%
+    Span 6:    50.0%
+    Span 7:    58.3333333333%
+    Span 8:    66.6666666667%
+    Span 9:    75.0%
+    Span 10:    83.3333333333%
+    Span 11:    91.6666666667%
+    Span 12:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 460px) and (max-width: 779px) {
+        
+        .row {
+            margin-left:-24px;
+        }
+        .col {
+            border-left-width:24px;
+            padding:0 0px;
+        }
+
+
+        .opl {
+            top: 17px;
+        }
+        
+        .home-title h1 {
+            font-size: 1.6875rem;
+            font-size: 27px;
+        }
+
+        .home-title h2 {
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+
+        .about-title h3,
+        .work-title h3,
+        .contact-title h3,
+        .menu ul li a {
+            font-size: 1.3125rem;
+            font-size: 21px;
+        }
+
+        .menu-icon {
+            top: 27px;
+            left: 27px;
+        }
+
+        .menu ul {
+            padding-top: 80px;
+        }
+        
+        .menu ul li a {
+            padding: 9px 0 9px 27px;
+        }
+
+        .services-content ul li:first-child {
+            font-size: 0.8125rem;
+            font-size: 13px;
+        }
+        
+        .span_1 {
+            width:8.33333333333%;
+        }
+        .span_2,
+        #about .empty,
+        #work .empty,
+        #contact .empty {
+            width:16.6666666667%;
+        }
+        .span_3 {
+            width:25.0%;
+        }
+        .span_4,
+        .services-design,
+        .services-frontend,
+        .services-team {
+            width:33.3333333333%;
+        }
+        .span_5 {
+            width:41.6666666667%;
+        }
+        .span_6,
+        .work-item {
+            width:50.0%;
+        }
+        .span_7 {
+            width:58.3333333333%;
+        }
+        .span_8,
+        .about-description,
+        .work-description,
+        .contact-description {
+        }
+        .span_9 {
+            width:75.0%;
+        }
+        .span_10 {
+            width:83.3333333333%;
+        }
+        .span_11 {
+            width:91.6666666667%;
+        }
+        .span_12,
+        .home-title,
+        .about-title,
+        .work-title,
+        .contact-title,
+        .f1 {
+            margin-left:0;
+            width:100%;
+        }
+    }
+
+    /* 4. 12 Column Grid 780px - 1199px 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    8.33333333333%
+    Span 2:    16.6666666667%
+    Span 3:    25.0%
+    Span 4:    33.3333333333%
+    Span 5:    41.6666666667%
+    Span 6:    50.0%
+    Span 7:    58.3333333333%
+    Span 8:    66.6666666667%
+    Span 9:    75.0%
+    Span 10:    83.3333333333%
+    Span 11:    91.6666666667%
+    Span 12:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 780px) and (max-width: 1199px) {
+        
+        .row {
+            margin-left:-24px;
+        }
+        .col {
+            border-left-width:24px;
+            padding:0 0px;
+        }
+        
+        
+        
+        
+        .span_1 {
+            width:8.33333333333%;
+        }
+        .span_2,
+        #about .empty,
+        #work .empty,
+        #contact .empty {
+            width:16.6666666667%;
+        }
+        .span_3 {
+            width:25.0%;
+        }
+        .span_4,
+        .services-design,
+        .services-frontend,
+        .services-team,
+        .work-item {
+            width:33.3333333333%;
+        }
+        .span_5 {
+            width:41.6666666667%;
+        }
+        .span_6 {
+            width:50.0%;
+        }
+        .span_7 {
+            width:58.3333333333%;
+        }
+        .span_8,
+        .about-description,
+        .work-description,
+        .contact-description {
+        }
+        .span_9 {
+            width:75.0%;
+        }
+        .span_10 {
+            width:83.3333333333%;
+        }
+        .span_11 {
+            width:91.6666666667%;
+        }
+        .span_12,
+        .home-title,
+        .about-title,
+        .work-title,
+        .contact-title,
+        .f1 {
+            margin-left:0;
+            width:100%;
+        }
+    }
+
+    /* 5. 12 Column Grid 1200px - Infinity 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    8.33333333333%
+    Span 2:    16.6666666667%
+    Span 3:    25.0%
+    Span 4:    33.3333333333%
+    Span 5:    41.6666666667%
+    Span 6:    50.0%
+    Span 7:    58.3333333333%
+    Span 8:    66.6666666667%
+    Span 9:    75.0%
+    Span 10:    83.3333333333%
+    Span 11:    91.6666666667%
+    Span 12:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 1200px) {
+        
+        .row {
+            margin-left:-24px;
+        }
+        .col {
+            border-left-width:24px;
+            padding:0 0px;
+        }
+        
+        #home {
+            min-height:1000px;
+        }
+        #home img {
+            width:40%;
+            margin-top:-100px;
+        }
+        
+        
+        
+        .span_1 {
+            width:8.33333333333%;
+        }
+        .span_2 {
+            width:16.6666666667%;
+        }
+        .span_3,
+        #about .empty,
+        #work .empty,
+        #contact .empty {
+            width:25.0%;
+        }
+        .span_4,
+        .services-frontend,
+        .services-design,
+        .services-team,
+        .work-item {
+            width:33.3333333333%;
+        }
+        .span_5 {
+            width:41.6666666667%;
+        }
+        .span_6,
+        .about-description,
+        .work-description,
+        .contact-description {
+            
+        }
+        .span_7 {
+            width:58.3333333333%;
+        }
+        .span_8 {
+            width:66.6666666667%;
+        }
+        .span_9 {
+            width:75.0%;
+        }
+        .span_10 {
+            width:83.3333333333%;
+        }
+        .span_11 {
+            width:91.6666666667%;
+        }
+        .span_12,
+        .home-title,
+        .about-title,
+        .work-title,
+        .contact-title,
+        .f1 {
+            margin-left:0;
+            width:100%;
+        }
+    }
+

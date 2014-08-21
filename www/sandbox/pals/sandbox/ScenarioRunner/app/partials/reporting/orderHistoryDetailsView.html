@@ -1,0 +1,38 @@
+<div class="view-summary text-right">
+    <p ng-show="order.DateSubmitted"><span class="text-info">Date Submitted</span>{{order.DateSubmitted | date:'short'}}</p>
+    <p><span class="text-info">Status</span>{{order.StatusText}}</p>
+    <p ng-show="order.DateCompleted"><span class="text-info">Date Completed</span>{{order.DateCompleted | date:'short'}}</p>
+    <p><span class="text-info">Created By</span>{{order.FromUserFirstName + ' ' + order.FromUserLastName}}</p>
+    <p ng-show="order.Comments"><span class="text-info">Comments</span>{{order.Comments}}</p>
+    <p ng-show="orderCostCenter"><span class="text-info">Cost Center</span>{{(order.LineItems.length == 1) && order.LineItems[0].CostCenter || null}}</p>
+    <p>
+        <span class="text-info">Payment Method</span>
+        {{order.PaymentMethodText}} <strong ng-show="order.CreditCard.Type">{{':' + order.CreditCard.DisplayName}}</strong> {{order.AmountOnAccount && order.PaymentMethod != 'BudgetAccount' ? "(" + (order.Total - order.AmountOnAccount | currency) + ")" : ""}}
+    </p>
+    <p ng-show="order.AmountOnAccount && order.PaymentMethod != 'BudgetAccount'">
+        <span class="text-info"></span>
+        {{(order.AccountName || order.AccountLabel) + " (" + (order.AmountOnAccount | currency) + ")"}}
+    </p>
+    <p ng-show="order.CostCenter"><span class="text-info">Cost Center</span>{{order.CostCenter}}</p>
+    <hr />
+    <address ng-show="order.ShipAddress">
+        <p class="text-left">
+            <span class="text-primary"><strong>Ship to</strong></span><br />
+            <span ng-show="order.LineItems[0].ShipFirstName || order.LineItems[0].ShipLastName">{{order.LineItems[0].ShipFirstName}} {{order.LineItems[0].ShipLastName}}</span>
+            <span ng-show="!order.LineItems[0].ShipFirstName || !order.LineItems[0].ShipLastName">{{order.ShipAddress.FirstName}} {{order.ShipAddress.LastName}}</span>
+            <br />{{order.ShipAddress.Street1}}<br>
+            {{order.ShipAddress.Street2}}<br ng-show="order.ShipAddress.Street2">
+            {{order.ShipAddress.City}}, {{order.ShipAddress.State}} {{order.ShipAddress.Zip}}
+        </p>
+    </address>
+    <address ng-show="order.BillAddress">
+        <p class="text-left">
+            <span class="text-primary"><strong>Bill to</strong></span><br />
+            <span ng-show="order.BillFirstName || order.BillLastName">{{order.BillFirstName}} {{order.BillLastName}}</span>
+            <span ng-show="!order.BillFirstName || !order.BillLastName">{{order.BillAddress.FirstName}} {{order.BillAddress.LastName}}</span>
+            <br />{{order.BillAddress.Street1}}<br>
+            {{order.BillAddress.Street2}}<br ng-show="order.BillAddress.Street2">
+            {{order.BillAddress.City}}, {{order.BillAddress.State}} {{order.BillAddress.Zip}}
+        </p>
+    </address>
+</div>

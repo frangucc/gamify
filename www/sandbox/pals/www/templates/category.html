@@ -1,0 +1,34 @@
+<ion-view>
+
+  <!-- search input -->
+
+  <div class="bar bar-subheader item-input-inset search-input-container">
+    <label class="item-input-wrapper">
+      <div class="search-icon-wrapper">
+        <i class="icon ion-search placeholder-icon custom-search-icon"></i>
+      </div>
+      <input class="js-searchField"
+        type="search"
+        placeholder="What would you like to recycle?"
+        ng-model="search.item.name">
+    </label>
+    <button class="button button-small button-energized" ng-if="search.item.name != ''" ng-click="clearSearchField()">
+      Cancel
+    </button>
+  </div>
+
+  <!-- View content (list of items) -->
+
+  <ion-content class="has-subheader">
+    <ul class="list">
+      <li class="item item-avatar" ng-repeat="item in items | filter:search.item.name" ng-click="goToItemDetail(item)">
+        <img ng-src="http://recyclesmart.com.au/{{item.item.avatar.avatar.thumb.url}}">
+        <h2>{{item.item.name}}</h2>
+        <p>
+          in
+          <span>{{item.categoryList}}</span>
+        </p>
+      </li>
+    </ul>
+  </ion-content>
+</ion-view>

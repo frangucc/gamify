@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en" ng-app="451order" ng-controller="Four51Ctrl">
+<head>
+	<!--baseTagToken-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>451order</title>
+	<link rel="stylesheet" href="css/bootstrap/{{AppConst.bootstrapFileName || 'bootstrap-451.css'}}">
+	<link rel="stylesheet" href="css/bootstrap-additions.min.css">
+    <link href="css/font-awesome.css" rel="stylesheet"/>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="css/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="css/angular-motion.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+    <link rel="stylesheet" href="css/breakpoint/app.css" media="screen"/>
+    <link rel="stylesheet" href="css/breakpoint/custom-large.css" media="screen"/>
+    <link rel="stylesheet" href="css/breakpoint/custom-medium.css" media="screen"/>
+    <link rel="stylesheet" href="css/breakpoint/custom-small.css" media="screen"/>
+    <link rel="stylesheet" href="css/breakpoint/custom-extra-small.css" media="screen"/>
+    <link rel="stylesheet" href="css/print.css" media="print"/>
+</head>
+<body ng-cloak ng-class="ng-cloak">
+<section ng-controller="Four51Ctrl">
+    <section ng-hide="Four51User.isAuthenticated() || isAnon" class="container">
+        <login />
+    </section>
+    <section ng-show="Four51User.isAuthenticated()" id="content">
+        <section class="hidden-print">
+            <navigation />
+        </section>
+        <section class="hidden-print">
+            <branding />
+        </section>
+        <section class="container-content">
+            <ng-view autoscroll />
+        </section>
+        <section ng-controller="ErrorCtrl">
+            <ng-include src="template.url" />
+        </section>
+        <section ng-if="!user.Permissions.contains('UnBrandedSite')">
+            <ng-include src="'partials/copyrightView.html'"></ng-include>
+        </section>
+    </section>
+</section>
+
+    <!-- In production use:
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+    -->
+
+    <script src="lib/jquery-2.0.0.js"></script>
+    <script src="lib/jquery-ui.min.js"></script>
+    <script src="lib/store.js"></script>
+    <script src="lib/angular/angular.1.2.0.js"></script>
+    <script src="lib/angular/angular-sanitize.js"></script>
+    <script src="lib/angular/angular-cookies.js"></script>
+    <script src="lib/angular/angular-animate.js"></script>
+    <script src="lib/angular/angular-resource.js"></script>
+    <script src="lib/angular/angular-route.js"></script>
+    <script src="lib/angular/angular-touch.js"></script>
+    <script src="lib/angular/angular-loader.js"></script>
+
+    <script src="lib/angular/gestures.js"></script>
+    <script src="lib/hammer/core.js"></script>
+    <script src="lib/hammer/detection.js"></script>
+    <script src="lib/hammer/event.js"></script>
+    <script src="lib/hammer/instance.js"></script>
+    <script src="lib/hammer/intro.js"></script>
+    <script src="lib/hammer/outro.js"></script>
+    <script src="lib/hammer/pointerevent.js"></script>
+    <script src="lib/hammer/setup.js"></script>
+    <script src="lib/hammer/utils.js"></script>
+    <script src="lib/hammer/gestures/drag.js"></script>
+    <script src="lib/hammer/gestures/hold.js"></script>
+    <script src="lib/hammer/gestures/release.js"></script>
+    <script src="lib/hammer/gestures/swipe.js"></script>
+    <script src="lib/hammer/gestures/tap.js"></script>
+    <script src="lib/hammer/gestures/touch.js"></script>
+    <script src="lib/hammer/gestures/transform.js"></script>
+
+    <script src="lib/angular/ui-bootstrap-0.2.0.js"></script>
+    <script src="lib/angular/ui-date.js"></script>
+    <script src="lib/angular/ui-validate.js"></script>
+    <script src="lib/angular/ui-mask.js"></script>
+    <script src="lib/angular/Debouncer.js"></script>
+    <script src="lib/angular/headroom.js"></script>
+    <script src="lib/angular/angular.headroom.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/451.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/routing.js"></script>
+	<script src="js/four51consts.js"></script>
+    <script src="js/controllers/Four51Ctrl.js"></script>
+    <script src="js/controllers/categoryCtrl.js"></script>
+    <script src="js/controllers/errorCtrl.js"></script>
+    <script src="js/controllers/loginCtrl.js"></script>
+    <script src="js/controllers/orderSearchCtrl.js"></script>
+    <script src="js/controllers/orderHistoryViewCtrl.js"></script>
+    <script src="js/controllers/lineItemHistoryCtrl.js"></script>
+    <script src="js/controllers/navCtrl.js"></script>
+    <script src="js/controllers/productCtrl.js"></script>
+    <script src="js/controllers/productListCtrl.js"></script>
+    <script src="js/controllers/messageListCtrl.js"></script>
+    <script src="js/controllers/messageViewCtrl.js"></script>
+    <script src="js/controllers/favoriteOrderCtrl.js"></script>
+    <script src="js/controllers/userEditCtrl.js"></script>
+    <script src="js/controllers/addressInputCtrl.js"></script>
+    <script src="js/controllers/addressListCtrl.js"></script>
+    <script src="js/controllers/addressViewCtrl.js"></script>
+    <script src="js/controllers/cartCtrl.js"></script>
+    <script src="js/controllers/lineItemGridCtrl.js"></script>
+    <script src="js/controllers/checkOutViewCtrl.js"></script>
+    <script src="js/controllers/approvalInputCtrl.js"></script>
+	<script src="js/controllers/specFormCtrl.js"></script>
+	<script src="js/controllers/securityCtrl.js"></script>
+	<script src="js/controllers/conditionsCtrl.js"></script>
+    <script src="js/controllers/giftCardRedemptionCtrl.js"></script>
+    <script src="js/controllers/developmentCtrl.js"></script>
+
+    <script src="js/services/interceptors.js"></script>
+    <script src="js/services/errorService.js"></script>
+    <script src="js/services/securityService.js"></script>
+    <script src="js/services/userService.js"></script>
+    <script src="js/services/orderService.js"></script>
+    <script src="js/services/orderConfigService.js"></script>
+    <script src="js/services/orderSearchService.js"></script>
+    <script src="js/services/orderStatsService.js"></script>
+    <script src="js/services/productService.js"></script>
+    <script src="js/services/categoryService.js"></script>
+    <script src="js/services/messageService.js"></script>
+    <script src="js/services/favoriteOrderService.js"></script>
+    <script src="js/services/accountsService.js"></script>
+    <script src="js/services/addressService.js"></script>
+    <script src="js/services/shipperService.js"></script>
+    <script src="js/services/couponService.js"></script>
+    <script src="js/services/giftCardService.js"></script>
+    <script src="js/services/resourceService.js"></script>
+
+    <script src="js/factories/fileReader.js"></script>
+    <script src="js/factories/dimensions.js"></script>
+    <script src="js/factories/debounce.js"></script>
+    <script src="js/factories/date-parser.js"></script>
+    <script src="js/factories/parse-options.js"></script>
+
+    <script src="js/directives/match.js"></script>
+    <script src="js/directives/buttonredirect.js"></script>
+    <script src="js/directives/product.js"></script>
+    <script src="js/directives/paymentselection.js"></script>
+    <script src="js/directives/customfields.js"></script>
+    <script src="js/directives/approvalrulelist.js"></script>
+    <script src="js/directives/tree.js"></script>
+    <script src="js/directives/addressinput.js"></script>
+    <script src="js/directives/reporting.js"></script>
+    <script src="js/directives/panel.js"></script>
+    <script src="js/directives/nav.js"></script>
+    <script src="js/directives/branding.js"></script>
+    <script src="js/directives/login.js"></script>
+    <script src="js/directives/approval.js"></script>
+    <script src="js/directives/fileinput.js"></script>
+    <script src="js/directives/shortCartView.js"></script>
+    <script src="js/directives/loadingindicator.js"></script>
+    <script src="js/directives/alertShow.js"></script>
+    <script src="js/directives/giftcard.js"></script>
+    <script src="js/directives/copyright.js"></script>
+    <script src="js/directives/ordersummary.js"></script>
+    <script src="js/directives/orderdetails.js"></script>
+    <script src="js/directives/ordershipping.js"></script>
+    <script src="js/directives/orderbilling.js"></script>
+    <script src="js/directives/orderapprovals.js"></script>
+
+    <script src="js/directives/printing.js"></script>
+
+    <script src="lib/angular-strap/affix.js"></script>
+    <script src="lib/angular-strap/alert.js"></script>
+    <script src="lib/angular-strap/button.js"></script>
+    <script src="lib/angular-strap/aside.js"></script>
+    <script src="lib/angular-strap/datepicker.js"></script>
+    <script src="lib/angular-strap/dropdown.js"></script>
+    <script src="lib/angular-strap/modal.js"></script>
+    <script src="lib/angular-strap/scrollspy.js"></script>
+    <script src="lib/angular-strap/tab.js"></script>
+    <script src="lib/angular-strap/tooltip.js"></script>
+    <script src="lib/angular-strap/typeahead.js"></script>
+    <script src="lib/angular-strap/navbar.js"></script>
+    <script src="lib/angular-strap/module.js"></script>
+    <script src="lib/angular-strap/popover.js"></script>
+    <script src="lib/angular-strap/select.js"></script>
+    <script src="lib/angular-strap/timepicker.js"></script>
+</body>
+</html>

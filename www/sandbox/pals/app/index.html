@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>"Pals"</title>
+    <script>
+        window.onresize=function(){
+        if ( $(this).width() > 724 ) {
+            
+              window.location.replace("#/app/web");
+            }
+            else if ( $(this).width() < 724 ) {
+              window.location.replace("#/app/playlists");
+            }
+          };
+
+          
+        </script>
+
+    <!-- build:css styles/vendor.css -->
+    <!-- <link rel="stylesheet" href="vendor/some.contrib.css"> -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/ionic/release/css/ionic.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- Addhoc files couldn't bower or sass intime for launch -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="adhocs/normalize.min.css">
+    <link rel="stylesheet" href="adhocs/style.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css'>
+    <!-- Get Firebase -->
+    <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+
+  </head>
+
+  <body ng-app="Pals" >
+    <ion-nav-view></ion-nav-view>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- <script src="vendor/someContribJs.js"></script> -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/ionic/release/js/ionic.js"></script>
+    <script src="bower_components/ionic/release/js/ionic-angular.js"></script>
+    <script src="bower_components/device.js/device.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script src="bower_components/readmore.js/readmore.js"></script>
+    
+
+
+        <!-- build:js scripts/scripts.js -->
+        <script src="scripts/config.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers.js"></script>
+        <!-- endbuild -->
+
+        <!-- Addhoc scripts didn't have time to put into bower, etc -->
+
+        <!-- JavaScript -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <script src="adhocs/skrollr.js"></script>
+        <script src="adhocs/main.js"></script>
+        <script src="adhocs/fastclick.js"></script>
+        <script src="adhocs/readmore.min.js"></script>
+        <!-- Google analytics -->
+        <script>
+
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-53373320-1', 'auto');
+          ga('send', 'pageview');
+
+          // Helper for outbound links
+          function trackOutboundLink(link, category, action) {
+            try {
+              pageTracker._trackEvent(category, action);
+            } catch (err) {
+            }
+            setTimeout(function () {
+              document.location.href = link.href;
+            }, 100);
+          }
+
+        </script>
+
+        <script>
+        $( document ).ready(function() {
+            $(function() {
+                FastClick.attach(document.body);
+            });
+        });
+        </script>
+
+        <script>
+        if (device.mobile()) {
+          window.location.replace("#/app/playlists");
+        };
+       
+        </script>
+        
+         <script type="text/javascript">
+          console.log("device.portrait() === %s", device.portrait());
+          console.log("device.landscape() === %s", device.landscape());
+          console.log("device.mobile() === %s", device.mobile());
+          console.log("device.tablet() === %s", device.tablet());
+          console.log("device.ipad() === %s", device.ipad());
+          console.log("device.ipod() === %s", device.ipod());
+          console.log("device.iphone() === %s", device.iphone());
+          console.log("device.android() === %s", device.android());
+          console.log("device.androidTablet() === %s", device.androidTablet());
+          console.log("device.blackberryTablet() === %s", device.blackberryTablet());
+          console.log("device.fxos() === %s", device.fxos());
+          console.log("device.fxosPhone() === %s", device.fxosPhone());
+          console.log("device.fxosTablet() === %s", device.fxosTablet());
+        </script>
+
+</body>
+</html>

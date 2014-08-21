@@ -1,0 +1,68 @@
+<section class="container check-out-view">
+    <hr />
+    <loadingindicator ng-show="displayLoadingIndicator" title="Please wait while we update your order" />
+
+    <ordersummary />
+
+    <div class="col-md-7 col-md-pull-5 check-out-view-types" ng-show="currentOrder && currentOrder.isEditable" ng-click="showSuccessAlert = false">
+        <orderdetails />
+        <ordershipping />
+        <orderbilling />
+        <orderapprovals />
+        <div class="view-footer navbar-fixed-bottom">
+            <div class="view-response-message alert-success ng-hide" alert-show="showSave">
+                <p>Your changes have been saved.</p>
+            </div>
+            <div class="view-response-message alert-success">
+                <p>{{actionMessage}}</p>
+            </div>
+            <div class="view-error-message">
+                <ul class="row">
+                    <li class="col-sm-1 alert-warning">
+                        <i class="fa fa-exclamation-circle text-danger"></i>
+                        <!--- badge only displays if errors > 1 --->
+                        <span class="badge">2 errors</span>
+                    </li>
+                    <li class="col-sm-10 alert-warning" style="margin: 0; padding: 0">
+                        <ul>
+                            <!--- first error message in list always displays, if errors > 1 then display first error but hide the others --->
+                            <li ng-show="couponError">{{couponError}}</li>
+                            <li ng-show="cart_order.orderid.$invalid">Enter an order id</li>
+                            <li ng-show="cart_shipping.shippingAddress.$invalid">Please choose a shipping address</li>
+                            <li ng-show="cart_shipping.shipMethod.$invalid">Please choose a shipping method</li>
+                            <li ng-if="!user.Permissions.contains('CreateBillToAddress') && (addresses | filter:{IsBilling:true}).length == 0">
+                                You're site is mis-configured. You do not have permission to create a billing address nor do you have any addresses assigned to you. Please contact your support representative.
+                            </li>
+                            <li ng-if="!user.Permissions.contains('CreateShipToAddress') && (addresses | filter:{IsShipping:true}).length == 0">
+                                Your site is mis-configured. You do not have permission to create a shipping address nor do you have any addresses assigned to you. Please contact your support representative.
+                            </li>
+                        </ul>
+                    </li>
+                    <!--- this arrow only appears if errors > 1 and will toggle display of all errors --->
+                    <li class="col-sm-1"><a class="fa fa-caret-down"></a></li>
+                </ul>
+            </div>
+            <ul class="view-footer-buttons">
+                <li style="width: 25%;">
+                    <button class="btn btn-danger" ng-click="cancelOrder()">
+                        Cancel Order
+                    </button>
+                </li>
+                <li style="width: 25%;">
+                    <button class="btn btn-primary"  ng-click="saveChanges()">
+                        <loadingindicator ng-show="displayLoadingIndicator" />
+                        Save Order
+                    </button>
+                </li>
+                <li>
+                    <button class="btn"
+                            ng-class="{'btn-warning': cart_shipping.$invalid || cart_order.$invalid || cart_billing.$invalid, 'btn-success': !cart_shipping.$invalid && !cart_order.$invalid && !cart_billing.$invalid }"
+                            ng-click="submitOrder()" ng-disabled="cart_shipping.$invalid || cart_order.$invalid || cart_billing.$invalid">
+                        <i ng-show="cart_shipping.$invalid || cart_order.$invalid || cart_billing.$invalid" class="fa fa-warning"></i>
+                        <span>Submit Order</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

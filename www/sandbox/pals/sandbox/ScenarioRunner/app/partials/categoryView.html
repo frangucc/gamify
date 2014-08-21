@@ -1,0 +1,65 @@
+<section class="container category-view">
+    <nav class="nav nav-cat-search">
+        <hr />
+            <ul>
+                <!--- TODO would like to see the toggle in scope and stay open if opened while navigation through categories and products until user decides to close aside nav --->
+                <li class="nav-header hidden-sm hidden-xs" ng-click="showMega = ! showMega" href="#">
+                    <span ng-show="!showMega"><i class="fa fa-plus" rel="tooltip" title="Open all Categories"></i></span>
+                    <span ng-show="showMega"><i class="fa fa-minus-circle" rel="tooltip" title="Close all Categories"></i></span>
+                </li>
+                <li class="text-nav">
+                    <span class="text-primary" ng-bind-html="currentCategory.Name || 'Categories'"></span>
+                    <span class="text-primary" ng-show="!currentCategory">Categories</span>
+                </li>
+                <li class="pull-right">
+                    <a href="#/search"><span><i class="fa fa-search" rel="tooltip" title="Search Products"></i></span></a>
+                </li>
+            </ul>
+        <hr />
+    </nav>
+    <aside class="col-sm-3 hidden-sm hidden-xs" ng-if="showMega" ng-class="{ 'category-view-aside': showMega }">
+        <nav class="nav 451_cat_nav">
+            <a href="#/catalog">All Products</a>
+            <ul class="nav-header 451_cat_item">
+                <categorytree tree='tree' current='currentCategory' />
+            </ul>
+        </nav>
+    </aside>
+    <div class="cat-body" ng-class="{ 'move-cat-body col-sm-9 col-collapse': showMega }">
+        <div class="category-product product-navigation" ng-show="currentCategory">
+            <loadingindicator ng-show="categoryLoadingIndicator" title="Please wait while we fetch all categories" />
+            <h3 class="text-primary" ng-show="currentCategory.SubCategories.length && currentCategory.InteropID">Categories</h3>
+            <nav class="nav 451_lbl_subcatlist">
+                <ul>
+                    <li class="nav-header well col-lg-3 col-md-4 col-sm-6 col-xs-12 productGrid" ng-class="{ 'category-view-aside': showMega }" ng-repeat="c in currentCategory.SubCategories">
+                        <a class="cat-link" ng-href="#/catalog/{{c.InteropID}}">
+                            <figure ng-show="c.Image.URL" class="cat-image">
+                                <img ng-src="{{c.Image.URL}}"/>
+                            </figure>
+                            <div class="empty" ng-show="!c.Image.URL">
+                                <span class="fa empty"><i class="fa fa-camera"></i></span>
+                            </div>
+                            <h5><span ng-bind-html="c.Name"></span></h5>
+                            <figcaption class="category-description" ng-bind-html="trusted(c.Description)"></figcaption>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="451_lst_prod" class="product-navigation" ng-if="currentCategory.InteropID">
+            <loadingindicator ng-show="productLoadingIndicator" title="Please wait while we fetch all products"/>
+            <h3 class="text-primary" ng-show="products">Products</h3>
+            <div ng-show="products" class="alert alert-info text-center">
+                <i class="fa fa-arrow-circle-o-left"></i>
+                Swipe Product Left
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li style="min-height:0;" class="nav-header well productList" ng-class="{ 'category-view-aside': showMega }" ng-repeat="product in products">
+                        <shortproductview p="product" user="user" />
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
