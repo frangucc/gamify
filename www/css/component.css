@@ -58,6 +58,10 @@
 	text-decoration:underline;
 }
 
+.hometext2 {
+	display:block;cursor:pointer;float:right;position:absolute;right:180px;top:197px;width:40%;font-size:40px;color:#fff;font-weight:300;
+}
+
 /* Grid style */
 .grid-wrap {
 	max-width: 69em;

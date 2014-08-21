@@ -205,17 +205,17 @@
 		}
 	</script>
 </head>
-<body style="background-image:url(img/gamify/bg-green.jpg);padding:30px 0px 0;background-size:cover;">
+<body style="background-image:url(img/gamify/bg-green.jpg);padding:30px 0px 0 0;background-size:cover;width:100%;">
 	<div class="container">
 		<div class="row">
 			<a href="pricing.html"><img src="img/gamify/ball-mini.png" /></a>
 			<h1 style="color:#fff">Subscribe</h1>
 			<p style="color:#fff;">
-				Cancel your subscription any time!
+				Cancel any time!
 			</p>
 		</div>
 
-		<div class="row" style="width: 500px; margin: 50px; text-align: left; display: inline-block;">
+		<div class="row" style="text-align: left; display: inline-block;">
 			<div class="col-md-8">
 				<form class="form" role="form" onsubmit="return signup()">
 					<div class="row">
@@ -310,21 +310,22 @@
 
 							<hr>
 							<h4>Total Due Today: <span style="float: right;" id="info-total-today"></span></h4>
+
 						</div>
+
 					</div>
 				</div>
-			</div>
-		</div>
-					</div>
-
-					<div class="row">
-						<div class="form-group" style="text-align: center;">
-							<button type="submit" class="btn btn-info fcbtn">
+				<button type="submit" class="btn btn-info fcbtn">
 								<span>Subscribe Now &rarr;</span>
 								<img src="img/ajax-loader-btn.gif" style="display: none; width: 13px;">
 							</button>
-						</div>
+			</div>
+
+		</div>
+
 					</div>
+
+					
 				</form>
 			</div>
 			
@@ -335,6 +336,8 @@
 		border:none !important;
 
 	}
+	form {
+	}
 	label {
 		color:#fff !important;
 		font-weight:300 !important;
@@ -343,9 +346,7 @@
 		font-weight:normal;
 	}
 	h4 {font-weight:normal !important;}
-	.fcbtn {
-		width:470px !important;
-	}
+	
 	</style>
 </body>
 </html>

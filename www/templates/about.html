@@ -1,3 +1,4 @@
+
 <ion-view title="{{ user.first_name }}'s scorecard" hide-back-button="true" style="background-color:#1c984d;">
     <ion-nav-buttons side="left">
         <button menu-toggle="left"class="button button-icon ion-navicon-round"></button>
@@ -7,30 +8,30 @@
 
   <div class="item item-avatar" style="border:none !important">
     <img src="img/gamify/level-messi-thumb.jpg">
-    <h2 style="font-weight:600;">Lionel Messi</h2>
+    <h2 style="font-weight:600;font-size:22px !important;">Lionel Messi</h2>
     <p>Level One</p>
   </div>
 
   <div class="item item-body" style="border:none !important">
-    <img class="full-image" src="img/gamify/level-messi-art-1.jpg">
+    <img class="full-image" src="img/gamify/level-messi-art-1.jpg" style="margin-top:-20px;">
     <p>
-      {{ user.first_name }}, this will be the soccer card that the player has acquired. Revise design later francke jones bitch.
+      {{ user.first_name }}, you've completed level one Messi. Congrats! Be sure you're submission was your best attempt.
     </p>
     
   </div>
 
   <div class="item tabs tabs-secondary tabs-icon-left" style="border:none !important;background-color:#eee">
     <a class="tab-item" href="#">
-      <i class="icon ion-social-facebook icon-colored"></i>
-      Facebook
+      <i class="icon ion-ios7-football" style="color:#17894a;"></i>
+      About
     </a>
     <a class="tab-item" href="#">
-      <i class="icon ion-social-twitter icon-colored"></i>
-      Twitter
+      <i class="icon ion-podium" style="color:#17894a;"></i>
+      Your Rank
     </a>
     <a class="tab-item" href="#">
-      <i class="icon ion-videocamera icon-colored"></i>
-      Details
+      <i class="icon ion-arrow-return-left" style="color:#17894a;"></i>
+      Retry
     </a>
   </div>
 

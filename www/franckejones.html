@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 	<head>
+		<script>
+	    window.onresize=function(){
+	    if ( $(this).width() < 724 ) {
+	        
+	          window.location.replace("http://franckejones.nodejitsu.com");
+	        }
+	      };
+	    </script>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -21,25 +29,28 @@
 		<link rel="stylesheet" type="text/css" href="css/book_component.css" />
 		<script src="js/modernizr.custom.js"></script>
 	</head>
-	<body class="cbp-spmenu-push" style="background-color:#282828;background-image:url('http://cl.ly/W5Mj/bg.jpg');background-size:cover;">
+	<body class="cbp-spmenu-push" style="background-color:#282828;background-image:url('http://cl.ly/WPD6/brioshi.jpg');background-size:cover;">
 		
 		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
 			<h3>My Sanbox</h3>
-			<a href="/www/blog.html">Gamify</a>
-			<a href="/www/sandbox/ticketbar/public/">TicketBar.io</a>
-			<a href="https://gist.github.com/frangucc/8014d3eddd0abe406fff" target="_blank">#UP!</a>
+			<a href="/sandbox/ticketbar/public/">Three.js</a>
+			<a href="https://gist.github.com/frangucc/8014d3eddd0abe406fff" target="_blank">#UP! &amp; Ionic</a>
+			<a href="/famo/">Famo.us</a>
+			<a href="/book.html">Ten Page Books</a>
+			<a href="/chatyeo/chat.html">Chatyeo</a>
+			<a href="#">Twillio</a>
 			<a href="#">UX Stuff</a>
 			<a href="#">Ionic</a>
-			<a href="#">Famo.us</a>
-			<a href="#">Ten Page Books</a>
-			<a href="#">Twillio</a>
-			<a href="#">Chatyeo</a>
+			<a href="/blog.html">Gamify</a>
 		</nav>
 		
-		<nav style="position:absolute;right:40px;top:45px;">
-					<a style="cursor:pointer;color:#ff2e63;" class="icon-arrow-left" id="showRightPush" data-info="my sandbox"> sandbox</a>
+		<nav style="position:fixed;right:30px;top:30px;">
+					<a style="cursor:pointer;color:#ff2e63;" id="showRightPush" data-info="my sandbox"> sandbox</a>
 				</nav>
-		<div class="hometext">Hello, I'm Francke Jones, a travelling designer &amp; developer. I go wherever there is fulfilling work to be done.<br /><br />This is where I show off my skills so you'll <a href="#">hire me.</a><br /><br />I've worked for <span ><a href="#">Avenue,</a> <a href="#">Manifest Digital,</a> <a href="#">Lightbank,</a> <a href="#">Groupon,</a>  <a href="#">Monthlys,</a>  <a href="#">Raise,</a>  <a href="#">Code Academy,</a>  <a href="#">General Assembly</a> </span> and a few <a href="#">other</a> lesser known companies.</div> 
+		<div class="hometext">I'm Francke Jones, a travelling <a href="#">artist,</a> <a href="#">designer &amp;</a> <a href="#">programmer.</a> I make innovative technologies productive and enjoyable.<br /><br />To the left is where I show off my skills so you'll <a href="#">hire me.</a><br /><br />I've worked for <span ><a href="#">Avenue,</a> <a href="#">Manifest Digital,</a> <a href="#">Lightbank,</a> <a href="#">Groupon,</a>  <a href="#">Monthlys,</a>  <a href="#"></a>  <a href="#">Code Academy,</a>  <a href="#">General Assembly</a> </span> and <a href="#">BenchPrep.</a><br /><br />Oh, and <a href="https://play.spotify.com/user/122292654/playlist/158tj7lZcPn3yrMj3yEDxN" target="_blank">here</a> is a playlist I made just for you.
+			<p style="color:#fff;font-size:17px;padding-top:40px;">francke.jones@gmail.com  | 312-806-7979 &nbsp;&nbsp;&nbsp;/ &nbsp;&nbsp;&nbsp;<a href="http://github.com/frangucc" target="_self">Github</a>&nbsp;&nbsp;&nbsp;&nbsp;/ &nbsp;&nbsp;&nbsp;<a href="https://plus.google.com/u/1/104368505327130449944/posts" target="_self">Google+</a>&nbsp;&nbsp;&nbsp;&nbsp;/ &nbsp;&nbsp;&nbsp;<a href="http://instagram.com/hyprlostsole">Twitter</a></p></div>
+
+		<div class="hometext2" style="display:none;">Back to my spiel...</div> 
 
 		<div class="container">
 			<header class="clearfix">
@@ -95,7 +106,13 @@
 							<figure>
 								<figcaption>
 									<h3>Angular, Ionic and Cordova</h3>
-									<p>Try my hybrid on your mobile phone. Supply your number and I'll text you the link.<input type="text" value="312-806-7979" /> or <a href="http://localhost:5000/www/mobile/www/#/app/playlists">launch in your browser</a></p>
+									<p>Try my hybrid on your mobile phone. Supply your number and I'll text you the link.
+
+										<form method="POST" action="http://franckejones.nodejitsu.com/message?to=to">
+										   <input type="text" name="to" value="312-806-7979" />
+										   <input type="submit" value="Submit">
+										</form>
+										</p>
 								</figcaption>
 								<img src="http://cl.ly/W5Cg/hybrid_thumb.jpg" alt="img01"/>
 							</figure>
@@ -112,19 +129,22 @@
 						<li>
 							<figure>
 								<figcaption>
-									<h3>Brunch semiotics</h3>
-									<p>IPhone PBR polaroid before they sold out meh you probably haven't heard of them leggings tattooed tote bag, butcher paleo next level single-origin coffee photo booth.</p>
+									<h3>My Mobile Portfolio in IonicAngular</h3>
+									<form method="POST" action="http://franckejones.nodejitsu.com/message?to=to">
+										   <input type="text" name="to" value="312-806-7979" />
+										   <input type="submit" value="Submit">
+										</form>
 								</figcaption>
-								<img src="img/large/3.png" alt="img03"/>
+								<img src="img/large/fjp.jpg" alt="img03"/>
 							</figure>
 						</li>
 						<li>
 							<figure>
 								<figcaption>
-									<h3>Brunch semiotics</h3>
-									<p>IPhone PBR polaroid before they sold out meh you probably haven't heard of them leggings tattooed tote bag, butcher paleo next level single-origin coffee photo booth.</p>
+									<h3>Github Starter Apps</h3>
+									<p>I have a decent amount of angular projects publically available to check-out. Please feel free. <a href="https://github.com/frangucc?tab=repositories" target="_blank">My Github</a></p>
 								</figcaption>
-								<img src="img/large/3.png" alt="img04"/>
+								<img src="img/large/github.jpg" alt="img04"/>
 							</figure>
 						</li>
 						
@@ -143,7 +163,7 @@
 								<li>
 									<h4 class="cbp-nttrigger">New Prototypes</h4>
 									<div class="cbp-ntcontent">
-										<p>Simba, Tround, Gamify - prototyping is one of my favorite things to do. Have done some wonderful things recently with Invision.</p>
+										<p>Curioshi, Tround, Gamify - prototyping is one of my favorite things to do. Have done some wonderful things recently with Invision.</p>
 										<div class="">
 				<div id="grid-gallery2" class="grid-gallery">
 				<section class="grid-wrap">
@@ -161,12 +181,12 @@
 								<figcaption><h3>Tround</h3><p>Todo list based on trending geotagged photos from around the world.</p></figcaption>
 							</figure>
 						</li>
-						<li>
+						<!-- li>
 							<figure>
 								<img src="http://cl.ly/W4tJ/simba_thumb.jpg" alt="img07"/>
 								<figcaption><h3>Simba</h3><p>Make the wake and funeral notification, donation and memorializing process a million times better than it is today.</p></figcaption>
 							</figure>
-						</li>
+						</li -->
 						<li>
 							<figure>
 								<img src="img/portfolio/curioshi_thumb.jpg" alt="img101"/>
@@ -200,7 +220,7 @@
 								<img src="http://cl.ly/W4k7/tround.jpg" alt="img06"/>
 							</figure>
 						</li>
-						<li>
+						<!-- li>
 							<figure>
 								<figcaption>
 									<h3>Simba</h3>
@@ -208,7 +228,7 @@
 								</figcaption>
 								<img src="http://cl.ly/W5MK/simba_x.jpg" alt="img07"/>
 							</figure>
-						</li>
+						</li -->
 						<li>
 							<figure>
 								<figcaption>
@@ -259,6 +279,12 @@
 								<figcaption><h3>Get #UP!</h3><p>#UP! get's your computer ready for cross platform development.</p></figcaption>
 							</figure>
 						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/famous.jpg" alt="img10"/>
+								<figcaption><h3>Famo.us</h3><p>I host the kitchen sink here. Have it sent to your phone. Enlarge.</p></figcaption>
+							</figure>
+						</li>
 						
 						
 						
@@ -272,10 +298,10 @@
 						<li>
 							<figure>
 								<figcaption>
-									<h3>Gamify</h3>
-									<p>Full Resolution Design Deck - <a href="http://cl.ly/W4ht/gamify.jpg" target="_blank">View Complete Design Deck</a></p>
+									<h3>Ionic Framework</h3>
+									<p>Ionic is a Framework I'm quite familiar of and proud of - <a href="http://showcase.ionicframework.com/" target="_blank">See Ionics Showcase</a></p>
 								</figcaption>
-								<img src="http://cl.ly/W4ht/gamify.jpg" alt="img08"/>
+								<img src="img/large/ionic.jpg" alt="img08"/>
 							</figure>
 						</li>
 						<li>
@@ -296,6 +322,17 @@
 								<iframe width="560" height="315" src="//www.youtube.com/embed/bS-txYG96wE" frameborder="0" allowfullscreen></iframe>
 							</figure>
 						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Famou.us Sandbox</h3>
+									<p>I'll send the latest Famo.us stuff to your phone to checkout. I have it hosted here.</p>
+									<input type="text" name="to" value="312-806-7979" />
+										   <input type="submit" value="Submit">
+								</figcaption>
+								<img src="img/large/famous.jpg" alt="img09"/>
+							</figure>
+						</li>
 						
 					</ul>
 					<nav>
@@ -310,6 +347,99 @@
 									
 
 
+									</div>
+								</li>
+								<li>
+									<h4 class="cbp-nttrigger">User Research</h4>
+									<div class="cbp-ntcontent">
+										<p>My Experience in User Studies, Consumer Behavior Research, Usability Testing</p>
+
+										<div class="">
+				<div id="grid-gallery6" class="grid-gallery">
+				<section class="grid-wrap">
+					<ul class="grid">
+						<li class="grid-sizer"></li><!-- for Masonry column width -->
+						
+						<li>
+							<figure>
+								<img src="img/portfolio/thumb_dough2.jpg" alt="img28"/>
+								<figcaption><h3>Dough.com Forensic User Research</h3><p>Quant &amp; Qual user research, usability testing and proof of concept exploration for a new type options trading platform.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/portfolio/snapsheet_thumb.jpg" alt="img29"/>
+								<figcaption><h3>Snapsheet UX Research &amp; Design</h3><p>Enterprise software research and design.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/portfolio/zaption_thumb.jpg" alt="img30"/>
+								<figcaption><h3>Zaption.com Usability Testing</h3><p>Tested variations of Zaption's core product with individual users to ensure things we're truly coming across.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/portfolio/pickie_thumb.jpg" alt="img31"/>
+								<figcaption><h3>Pickie, aquired by RetailMeNot</h3><p>Product concept, theory and wireframes to proof-of-concept.</p></figcaption>
+							</figure>
+						</li>
+						
+						
+
+						
+					</ul>
+				</section><!-- // grid-wrap -->
+				<section class="slideshow">
+					<ul>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>User Research</h3>
+									<p>Conducted multiple user research sessions on various segments. Here is one: <a href="https://www.dropbox.com/s/r6qwij56vtfulz1/Dough-UserResearchFindings.pdf" target="_blank">View Presentation</a></p>
+								</figcaption>
+								<img src="img/large/dough.jpg" alt="img28"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>User Research and UI</h3>
+									<p>Full Resolution Design Deck - <a href="https://www.dropbox.com/s/olhpe6vpum93876/SnapsheetUsabilityFindings.pdf" target="_blank"> Check out a deck</a></p>
+								</figcaption>
+								<img src="img/large/snapsheet.jpg" alt="img29"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Usability Testing</h3>
+									<p>Helped Zaption figure out some things.<a href="https://www.dropbox.com/s/b61k5k9zt3igusw/zaption_wireframes_forzaption.pdf" target="_blank"> Check out a sample deck</a></p>
+								</figcaption>
+								<img src="img/large/zaption.jpg" alt="img30"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Pickie UX &amp; Ideation</h3>
+									<p>Helped pull together some fascinating ideas for Pickie just before they sold.<a href="http://f.cl.ly/items/1P293A1L2N0I3c0N1z0C/pickie_pickie.pdf" target="_blank"> Check out a deck</a></p>
+								</figcaption>
+								<img src="img/large/pickie.jpg" alt="img30"/>
+							</figure>
+						</li>
+					
+						
+					</ul>
+					<nav>
+						<span class="icon nav-prev"></span>
+						<span class="icon nav-next"></span>
+						<span class="icon nav-close"></span>
+					</nav>
+					<div class="info-keys icon">Navigate with arrow keys</div>
+				</section><!-- // slideshow -->
+			</div><!-- // grid-gallery -->
+				</div>
 									</div>
 								</li>
 							</ul>
@@ -332,20 +462,12 @@
 						
 						<li>
 							<figure>
-								<img src="http://cl.ly/W4tQ/cst_logo.jpg" alt="img11"/>
-								<figcaption><h3>Chicago Sun Times Native iOS App</h3><p>Paired with another iOS developer on the CST's new native iOS app.</p></figcaption>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="img/portfolio/koupon_thumb.jpg" alt="img12"/>
-								<figcaption><h3>Kou.pn Media Design &amp; Front End</h3><p>Reimagined a Series C company's entire product design, experience and developed the front-end.</p></figcaption>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="img/portfolio/ticketbar_thumb.jpg" alt="img13"/>
-								<figcaption><h3>Angular Web App</h3><p>New technologies in 2014 now make hybrid apps realistic as a foundation for digitial properties. I list a series of apps that I've been creating with these technologies.</p></figcaption>
+								<img src="http://cl.ly/W4tQ/cst_logo.jpg" alt="img02"/>
+								<figcaption>
+									<h3>Chicago Sun Times Cross Platform</h3>
+									<p>Built prototype of CST Native App as an Ionic Hybrid App.</p>
+								</figcaption>
+								
 							</figure>
 						</li>
 						<li>
@@ -354,6 +476,13 @@
 								<figcaption><h3>Ruby on Rails</h3><p>Lead architect and front-end evangelist for entire project.</p></figcaption>
 							</figure>
 						</li>
+						<li>
+							<figure>
+								<img src="img/portfolio/ticketbar_thumb.jpg" alt="img13"/>
+								<figcaption><h3>Angular Web App</h3><p>New technologies in 2014 now make hybrid apps realistic as a foundation for digitial properties. I list a series of apps that I've been creating with these technologies.</p></figcaption>
+							</figure>
+						</li>
+						
 						
 					</ul>
 				</section><!-- // grid-wrap -->
@@ -362,39 +491,31 @@
 						<li>
 							<figure>
 								<figcaption>
-									<h3>Letterpress asymmetrical</h3>
-									<p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
-								</figcaption>
-								<img src="http://cl.ly/W5Cg/hybrid_thumb.jpg" alt="img11"/>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<figcaption>
-									<h3>Chicago Sun Times Cross Platform</h3>
+									<h3>Chicago Sun-Times Ionic Hybrid App</h3>
 									<p>Full Resolution Design Deck - <a href="http://f.cl.ly/items/1c3C1v2S242E2t3j0h2u/Francke2.jpg" target="_blank">View Complete Design Deck</a></p>
 								</figcaption>
-								<img src="http://cl.ly/W4ns/cst.jpg" alt="img12"/>
+								<img src="http://f.cl.ly/items/1c3C1v2S242E2t3j0h2u/Francke2.jpg" alt="img11"/>
 							</figure>
 						</li>
 						<li>
 							<figure>
 								<figcaption>
-									<h3>Brunch semiotics</h3>
-									<p>IPhone PBR polaroid before they sold out meh you probably haven't heard of them leggings tattooed tote bag, butcher paleo next level single-origin coffee photo booth.</p>
+									<h3>Huge Ruby on Rails Project</h3>
+									<p>Led development, front-end and other aspects of a very large RoR project. Check out the source here: <a href="https://github.com/frangucc/monthly" target="_blank">Monthlys on Github</a></p>
+								</figcaption>
+								<img src="img/large/monthlys2.jpg" alt="img14"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Coming Soon...</h3>
+									<p>Francke add more dev projects here asap.</p>
 								</figcaption>
 								<img src="img/large/3.png" alt="img13"/>
 							</figure>
 						</li>
-						<li>
-							<figure>
-								<figcaption>
-									<h3>Brunch semiotics</h3>
-									<p>IPhone PBR polaroid before they sold out meh you probably haven't heard of them leggings tattooed tote bag, butcher paleo next level single-origin coffee photo booth.</p>
-								</figcaption>
-								<img src="img/large/3.png" alt="img14"/>
-							</figure>
-						</li>
+						
 						
 					</ul>
 					<nav>
@@ -411,7 +532,7 @@
 								<li>
 									<h4 class="cbp-nttrigger">Design</h4>
 									<div class="cbp-ntcontent">
-										<p>Simba, Tround, Gamify - prototyping is one of my favorite things to do. Have done some wonderful things recently with Invision.</p>
+										<p>Curioshi, Tround, Gamify - prototyping is one of my favorite things to do. Have done some wonderful things recently with Invision.</p>
 										
 				<div id="grid-gallery5" class="grid-gallery">
 				<section class="grid-wrap">
@@ -465,6 +586,12 @@
 								<figcaption><h3>App Builder</h3><p>Create your own native Android and iOS app with ShipMyApp - designed complete project and user experience.</p></figcaption>
 							</figure>
 						</li>
+						<li>
+							<figure>
+								<img src="img/portfolio/koupon_thumb.jpg" alt="img12"/>
+								<figcaption><h3>Kou.pn Media Design &amp; UI Design</h3><p>UX Work and User Interface for Kou.pn Media.</p></figcaption>
+							</figure>
+						</li>
 						
 						
 						
@@ -499,7 +626,7 @@
 									<br />
 									<iframe src="//player.vimeo.com/video/26066153" width="565" height="331" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 								</figcaption>
-								<img src="http://cl.ly/W5MK/simba_x.jpg" alt="img17"/>
+								
 							</figure>
 						</li>
 						<li>
@@ -520,7 +647,7 @@
 								<img src="http://cl.ly/W4k7/tround.jpg" alt="img19"/>
 							</figure>
 						</li>
-						<li>
+						<!-- li>
 							<figure>
 								<figcaption>
 									<h3>Simba</h3>
@@ -528,7 +655,7 @@
 								</figcaption>
 								<img src="http://cl.ly/W5MK/simba_x.jpg" alt="img20"/>
 							</figure>
-						</li>
+						</li -->
 						<li>
 							<figure>
 								<figcaption>
@@ -538,13 +665,21 @@
 								<img src="http://cl.ly/W4k7/tround.jpg" alt="img21"/>
 							</figure>
 						</li>
-						<li>
+						<!-- li>
 							<figure>
 								<figcaption>
 									<h3>Simba</h3>
 									<p>Just a few screens taken from a clickable prototype.<a href="http://cl.ly/W4Rg/simba.jpg" target="_blank"> Higher Resolution</a></p>
 								</figcaption>
 								<img src="http://cl.ly/W5MK/simba_x.jpg" alt="img22"/>
+							</figure>
+						</li -->
+						<li>
+							<figure>
+								<figcaption>Koupn</h3>
+									<p>Sample Design - <a href="http://cl.ly/WWxL/campaign_create.jpg" target="_blank">Click Here</a></p>
+								</figcaption>
+								<img src="img/large/koupn.jpg" alt="img21"/>
 							</figure>
 						</li>
 						
@@ -562,98 +697,7 @@
 								</li>
 								
 								<li>
-									<h4 class="cbp-nttrigger">User Research</h4>
-									<div class="cbp-ntcontent">
-										<p>My Experience in User Studies, Consumer Behavior Research, Usability Testing</p>
-
-										<div class="">
-				<div id="grid-gallery6" class="grid-gallery">
-				<section class="grid-wrap">
-					<ul class="grid">
-						<li class="grid-sizer"></li><!-- for Masonry column width -->
-						
-						<li>
-							<figure>
-								<img src="img/portfolio/thumb_dough2.jpg" alt="img28"/>
-								<figcaption><h3>Dough.com Forensic User Research</h3><p>Quant &amp; Qual user research, usability testing and proof of concept exploration for a new type options trading platform.</p></figcaption>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="img/portfolio/snapsheet_thumb.jpg" alt="img29"/>
-								<figcaption><h3>Snapsheet UX Research &amp; Design</h3><p>Enterprise software research and design.</p></figcaption>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="img/portfolio/zaption_thumb.jpg" alt="img30"/>
-								<figcaption><h3>Zaption.com Usability Testing</h3><p>Tested variations of Zaption's core product with individual users to ensure things we're truly coming across.</p></figcaption>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="img/portfolio/pickie_thumb.jpg" alt="img31"/>
-								<figcaption><h3>Pickie, aquired by RetailMeNot</h3><p>Product concept, theory and wireframes to proof-of-concept.</p></figcaption>
-							</figure>
-						</li>
-						
-						
-
-						
-					</ul>
-				</section><!-- // grid-wrap -->
-				<section class="slideshow">
-					<ul>
-						<li>
-							<figure>
-								<figcaption>
-									<h3>Letterpress asymmetrical</h3>
-									<p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
-								</figcaption>
-								<img src="http://cl.ly/W5Cg/hybrid_thumb.jpg" alt="img28"/>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<figcaption>
-									<h3>Chicago Sun Times Cross Platform</h3>
-									<p>Full Resolution Design Deck - <a href="http://f.cl.ly/items/1c3C1v2S242E2t3j0h2u/Francke2.jpg" target="_blank">View Complete Design Deck</a></p>
-								</figcaption>
-								<img src="http://cl.ly/W4ns/cst.jpg" alt="img29"/>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<figcaption>
-									<h3>Brunch semiotics</h3>
-									<p>IPhone PBR polaroid before they sold out meh you probably haven't heard of them leggings tattooed tote bag, butcher paleo next level single-origin coffee photo booth.</p>
-								</figcaption>
-								<img src="img/large/3.png" alt="img30"/>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<figcaption>
-									<h3>Brunch semiotics</h3>
-									<p>IPhone PBR polaroid before they sold out meh you probably haven't heard of them leggings tattooed tote bag, butcher paleo next level single-origin coffee photo booth.</p>
-								</figcaption>
-								<img src="img/large/3.png" alt="img31"/>
-							</figure>
-						</li>
-					
-					
-						
-					</ul>
-					<nav>
-						<span class="icon nav-prev"></span>
-						<span class="icon nav-next"></span>
-						<span class="icon nav-close"></span>
-					</nav>
-					<div class="info-keys icon">Navigate with arrow keys</div>
-				</section><!-- // slideshow -->
-			</div><!-- // grid-gallery -->
-				</div>
-									</div>
+									
 								</li>
 								
 							</ul>
@@ -808,7 +852,9 @@ If you’ve answered my four questions in the following way: same, no and yes, t
 					</li -->
 
 				</ul>
+
 			</div>
+
 		</div>
 
 
@@ -836,8 +882,18 @@ If you’ve answered my four questions in the following way: same, no and yes, t
 			} );
 			
 			$( ".threeski" ).click(function() {
-			  $( ".hometext" ).toggle();
+			  $( ".hometext" ).hide();
+			  $( ".hometext2" ).show();
 			});
+			$( ".hometext2" ).click(function() {
+			  $( ".hometext" ).show();
+			  $("html, body").animate({scrollTop: 0}, 500);
+			  $( ".hometext2" ).hide();
+			  window.location.replace("/franckejones.html");
+			});
+
+			
+
 
 		</script>
 		<script src="js/classie.js"></script>
@@ -868,5 +924,6 @@ If you’ve answered my four questions in the following way: same, no and yes, t
 			new CBPGridGallery( document.getElementById( 'grid-gallery5' ) );
 			new CBPGridGallery( document.getElementById( 'grid-gallery6' ) );
 		</script>
+
 	</body>
 </html>

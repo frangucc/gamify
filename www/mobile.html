@@ -5,11 +5,22 @@
   <head>
     
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="https://www.flinto.com/assets/default_attachments/prototypes/iphone_retina/1.png"/>
 
+    <script>
+      if (window.navigator.standalone) {
+        $("meta[name='apple-mobile-web-app-status-bar-style']").remove();
+        $('#in_web_clips').show();
+      }
+      else {
+        $('#in_safari').show();
+      }
+    </script>
+    <title></title>
+    <link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet">
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/theme.css" rel="stylesheet">
@@ -74,10 +85,21 @@
         }); */
     </script>
     <script type="text/javascript" charset="utf-8" src="js/logo_edgePreload.js"></script>
-<style>.edgeLoad-EDGE-86398690 { visibility:hidden; }</style>
-    <form action="server.cgi" method="post" enctype="multipart/form-data">
-  <input type="file" name="video" accept="video/*" capture>
-  <input type="submit" value="Upload">
-</form>
+    <style>.edgeLoad-EDGE-86398690 { visibility:hidden; }</style>
+        <form action="server.cgi" method="post" enctype="multipart/form-data">
+          <input type="file" name="video" accept="video/*" capture>
+          <input type="submit" value="Upload">
+        </form>
+     
+
+       <script>
+        if (window.navigator.standalone) {
+          $("meta[name='apple-mobile-web-app-status-bar-style']").remove();
+          $('#in_web_clips').show();
+        }
+        else {
+          $('#in_safari').show();
+        }
+      </script>
   </body>
 </html>

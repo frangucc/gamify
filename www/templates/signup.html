@@ -2,11 +2,11 @@
 
 <ion-view hide-back-button="true" class="signup-view">
   
-    <ion-content scroll="false" style="position:relative;top:370px;">
+    <ion-content scroll="false" style="position:relative;">
         
       <form ua-signup>
 
-      <div class="list list-inset signup-form" style="width:400px;left:160px;border:none;background:none;">
+      <div class="list list-inset signup-form" style="border:none;background:none;">
         <label class="item item-input">
           <input type="text" name="first_name"  name="name" placeholder="Your name or alias">
         </label>
@@ -17,22 +17,23 @@
           <input type="password" name="password"  name="password" placeholder="Password">
         </label>
       </div>
-      <div class="padding" style="position:relative;top:-20px;left:68px;">
+      <div class="padding" style="position:relative;top:260px;">
         <button type="submit" class="button button-block button-positive fcbtn">
           <span ng-show="!loading">Create Account</span>
           <i ng-show="loading" class="ion-loading-b"></i>
         </button>
       </div>
 
-  <div class="bar bar-footer bar-assertive" ng-show="error" style="width:400px;left:125px;">
+  <div class="bar bar-footer bar-assertive" ng-show="error" style="left:0px;top:290px;position:relative;">
     <div class="title">{{ error.message }}</div>
   </div>
+  <div class="padding" style="left:60px;position:relative;top:250px;">
+            
+            <a class="" style="color:#fff;font-size:14px;" href="#/app/login" >Already a member? Sign In</a>
+        </div>
 </form>
 
-        <div class="padding" style="width:400px;left:160px;position:relative;top:20px;left:176px;">
-            
-            <a class="" style="color:#fff;font-size:23px;" href="#/app/login" >Already a member? Sign In</a>
-        </div>
+        
 
     </ion-content>
 </ion-view>
