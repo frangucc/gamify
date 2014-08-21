@@ -1,0 +1,73 @@
+<ion-view>
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon-round"></button>
+		<button class="button button-icon icon ion-arrow-left-c" ng-click="goBack()"></button>
+	</ion-nav-buttons>
+
+	<ion-nav-buttons side="right">
+		<button class="button button-icon icon ion-star" ng-class="{ favorite: favorite }" ng-click="toggleFavorite()"></button>
+	</ion-nav-buttons>
+
+	<ion-content ng-init="init()" class="transparent-header" delegate-handle="small" on-scroll="scroll()">
+
+		<!-- HEADER IMAGE -->
+		<div class="header-image">
+			<span class="background" ng-style="{backgroundImage: 'url('+itemData.image+')'}"></span>
+			<h1 class="center"><span ng-if="!itemData.title && !itemData.name"><i class="ion-loading-d normal"></i></span>{{itemData.title||itemData.name}}</h1>
+		</div>
+
+		<!-- DESCRIPTION -->
+		<div ng-if="itemData.description.length > 0" class="padding">
+			<h6>Description</h6>
+			<p class="large" ng-bind-html="itemData.descriptionHTML"></p>
+		</div>
+
+		<div class="padding" ng-if="category == 'comics' && itemData">
+			<p class="large">This comic is part of the '{{itemData.series.name}}' series.</p>
+		</div>
+
+		<!-- ASSOCIATIONS -->
+		<div class="list padding" ng-if="itemData && (itemData.associationsAvailable || category == 'comics')">
+			<h6>Associations</h6>
+
+			<a class="item" ng-click="navigate('details/series/'+seriesID)" ng-if="category == 'comics' && seriesID">
+				{{itemData.series.name}}
+				<span class="button-hollow right">Go to series</span>
+			</a>
+
+			<a class="item" ng-click="navigate(list.allPath)" ng-repeat="list in lists" ng-if="itemData[list.name].available > 0">
+				{{itemData[list.name].available}} {{list.name}}
+				<span class="button-hollow right">All {{list.name}}</span>
+			</a>
+		</div>
+
+		<!-- MOAR INFO -->
+		<div class="list padding" ng-if="category == 'comics' && itemData">
+			<h6>About this comic</h6>
+			<span class="item">Format
+				<span class="right">{{itemData.format}}</span>
+			</span>
+			<span class="item" ng-if="itemData.pageCount > 0">Page count
+				<span class="right">{{itemData.pageCount}}</span>
+			</span>
+			<a ng-if="itemData.upc" href="http://www.google.com/search?q={{itemData.upc}}" class="item">UPC
+				<span class="right">{{itemData.upc}}</span>
+			</a>
+			<span class="item" ng-repeat="price in itemData.prices" ng-if="price.price > 0">{{price.type}}
+				<span class="right">&dollar;{{price.price}}</span>
+			</span>
+		</div>
+
+		<div class="list padding" ng-if="category == 'events' && itemData">
+			<h6>Start date</h6>
+			<span class="item">{{itemData.start.substr(0, itemData.start.length-9)}}</span>
+			<h6>End date</h6>
+			<span class="item">{{itemData.end.substr(0, itemData.end.length-9)}}</span>
+		</div>
+
+		<div class="padding opacity50" ng-if="itemData && itemData.modified">
+			<h6>Last modified</h6>
+			<p>{{itemData.modified.substr(0, itemData.modified.length-14)}}</p>
+		</div>
+	</ion-content>
+</ion-view>

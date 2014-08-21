@@ -1,0 +1,55 @@
+<ion-view>
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon-round"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+  	<button class="button button-icon icon ion-loading-d opactiy50" ng-if="items.length > 0 && loading"></button>
+  	<button class="button button-icon icon ion-gear-a" ng-click="showListPreferences()"></button>
+  </ion-nav-buttons>
+
+  <ion-content class="has-header" ng-init="init()" ng-class="{ hasTabsTop: showCategoryTabs }">
+
+  	<div ng-if="items.length < 1 && doneLoading" class="padding center">
+  		<h4>No results</h4>
+  		<p class="large">We didn't get any results from Marvel.</p>
+  	</div>
+
+	<ion-list class="{{listPreferences.listStyle}}" ng-class="{ cozy: listPreferences.listStyle == 'cozy' }">
+		<div ng-click="details(item)" class="item custom-list-item item-thumbnail-left" collection-repeat="item in items" collection-item-width="getItemWidth(item, $index)" collection-item-height="getItemHeight(item, $index)" ng-class="{ first: $index === 0 }">
+			<span class="img" style="background-image: url({{item.image || ''}})"></span>
+			<h2>{{item.title}}</h2>
+			<p>{{item.description}}</p>
+		</div>
+	</ion-list>
+	
+	<ion-infinite-scroll icon="none" on-infinite="getMoreItemsPlease()" distance="35%"></ion-infinite-scroll>
+
+  </ion-content>
+</ion-view>
+
+<script id="listPreferences.html" type="text/ng-template">
+	<ion-modal-view class="dark-theme">
+		<ion-header-bar>
+			<h1 class="title">List settings</h1>
+			<div class="button button-blue" ng-click="applyListPreferences()">Apply</div>
+		</ion-header-bar>
+		<ion-content>
+			<div class="padding">
+				<form>
+					<h6>Order by</h6>
+					<ion-radio name="order" ng-repeat="orderOptions in possibleOrderOptions" ng-model="listPreferences[category].order" ng-value="orderOptions.value">{{orderOptions.name}}</ion-radio>
+
+					<ion-checkbox ng-model="listPreferences[category].descending" ng-class="{ white: listPreferences[category].descending }">Descending</ion-checkbox>
+
+					<hr>
+
+					<h6>List style</h6>
+					<!--<ion-radio name="listStyle" ng-model="listPreferences.listStyle" ng-value="'small'">Small list</ion-radio>-->
+					<ion-radio name="listStyle" ng-model="listPreferences.listStyle" ng-value="'cozy'">Cozy list</ion-radio>
+					<ion-radio name="listStyle" ng-model="listPreferences.listStyle" ng-value="'normal'">Normal list</ion-radio>
+					<ion-radio name="listStyle" ng-model="listPreferences.listStyle" ng-value="'grid'">Grid</ion-radio>
+				</form>
+			</div>
+		</ion-content>
+	</ion-modal-view>
+</script>
